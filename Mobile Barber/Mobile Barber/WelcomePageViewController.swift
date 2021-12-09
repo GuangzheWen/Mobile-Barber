@@ -1,5 +1,5 @@
 import UIKit
-
+import SafariServices
 // 欢迎页面 视图控制器
 class WelcomePageViewController: UIViewController {
 
@@ -8,6 +8,9 @@ class WelcomePageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        authorizingNotification()
+        authorizingPhotoLibrary(vc: self)
+        authorizingLocation()
     }
 }
 

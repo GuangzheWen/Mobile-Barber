@@ -323,32 +323,98 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yiO-7v-45v">
-                                <rect key="frame" x="171" y="270" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjE-pE-5L0">
-                                <rect key="frame" x="161" y="573" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This App is made for both Barber shops and customers, tell it who you are?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcR-VO-aBz">
+                                <rect key="frame" x="40" y="124" width="334" height="147.5"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjE-pE-5L0">
+                                <rect key="frame" x="40" y="622" width="334" height="40"/>
+                                <color key="backgroundColor" red="0.34972177319999997" green="0.51091089769999998" blue="0.75882728649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1hC-5m-9Z1"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.34972177319999997" green="0.51091089769999998" blue="0.75882728649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" red="0.34972177319999997" green="0.51091089769999998" blue="0.75882728649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Get Started">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="ChalkboardSE-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.34972177319999997" green="0.51091089769999998" blue="0.75882728649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="enterButtonTapped:" destination="myT-Uw-Wue" eventType="touchUpInside" id="CaK-aX-wC8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="shouye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcR-VO-aBz">
-                                <rect key="frame" x="161" y="438" width="155" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="ulf-20-kys">
+                                <rect key="frame" x="49.5" y="394" width="315.5" height="108"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="CwM-oM-foi">
+                                        <rect key="frame" x="0.0" y="0.0" width="315.5" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a Barber shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otd-ek-bBd">
+                                                <rect key="frame" x="0.0" y="0.0" width="195.5" height="31"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yiO-7v-45v">
+                                                <rect key="frame" x="266.5" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="isBarberSwitchChosen:" destination="myT-Uw-Wue" eventType="valueChanged" id="zSE-gO-mIY"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Yro-Nx-0Lr">
+                                        <rect key="frame" x="0.5" y="77" width="314.5" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a customer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jz-ac-Dp7">
+                                                <rect key="frame" x="0.0" y="0.0" width="165.5" height="31"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BB6-Rq-O4R">
+                                                <rect key="frame" x="265.5" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="isCustomerSwitchChosen:" destination="myT-Uw-Wue" eventType="valueChanged" id="FWt-xV-SM2"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UPZ-xz-4l2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.3798421025" green="0.34951096770000001" blue="0.32156360150000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="UPZ-xz-4l2" firstAttribute="trailing" secondItem="wjE-pE-5L0" secondAttribute="trailing" constant="40" id="6A1-x5-DVT"/>
+                            <constraint firstAttribute="trailing" secondItem="XcR-VO-aBz" secondAttribute="trailing" constant="40" id="DOn-bj-kYG"/>
+                            <constraint firstItem="XcR-VO-aBz" firstAttribute="centerX" secondItem="82d-7j-el8" secondAttribute="centerX" id="Mr7-p2-bKm"/>
+                            <constraint firstItem="wjE-pE-5L0" firstAttribute="centerX" secondItem="82d-7j-el8" secondAttribute="centerX" id="MuG-y8-07S"/>
+                            <constraint firstItem="UPZ-xz-4l2" firstAttribute="bottom" secondItem="wjE-pE-5L0" secondAttribute="bottom" constant="200" id="N8f-mc-Bbe"/>
+                            <constraint firstItem="XcR-VO-aBz" firstAttribute="leading" secondItem="82d-7j-el8" secondAttribute="leading" constant="40" id="PDV-3o-Y7A"/>
+                            <constraint firstItem="ulf-20-kys" firstAttribute="centerX" secondItem="82d-7j-el8" secondAttribute="centerX" id="S2o-EH-bt0"/>
+                            <constraint firstItem="ulf-20-kys" firstAttribute="centerY" secondItem="82d-7j-el8" secondAttribute="centerY" id="UHO-cN-tB4"/>
+                            <constraint firstItem="XcR-VO-aBz" firstAttribute="top" secondItem="UPZ-xz-4l2" secondAttribute="top" constant="80" id="eXh-17-ZBx"/>
+                            <constraint firstItem="wjE-pE-5L0" firstAttribute="leading" secondItem="UPZ-xz-4l2" secondAttribute="leading" constant="40" id="j9n-hx-YON"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="identityIsBarberChoosingSwitch" destination="yiO-7v-45v" id="5d4-3u-uwq"/>
+                        <outlet property="identityIsCustomerChoosingSwitch" destination="BB6-Rq-O4R" id="wbY-Pt-06Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uv3-wO-Bpn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
