@@ -20,7 +20,9 @@ extension WelcomePageViewController: UIScrollViewDelegate {
         
         // 最后一页进入首页，缓慢
         if scrollView.contentOffset.x > (view.bounds.width * 2 + 20) {
+            // homeVC 设置成选择页
             let homeVC = storyboard!.instantiateInitialViewController()!
+            // 显示模式 全屏幕
             homeVC.modalPresentationStyle = .fullScreen
             present(homeVC, animated: true, completion: nil)
         }

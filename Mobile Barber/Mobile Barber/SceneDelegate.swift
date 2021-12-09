@@ -23,16 +23,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         
         if UserDefaults.standard.bool(forKey: "isBarber")  {
+            // 获取到Main故事版
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            
+            // 让默认的VC 等于 故事版里面的barberVC
             window?.rootViewController = storyboard.instantiateViewController(identifier: "BarberSideVCID")
-            
-//            UserDefaults.standard.setValue(true, forKey: "isBarber")
         }
         
         if UserDefaults.standard.bool(forKey: "isCustomer") {
+            // 获取Main故事版
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            
+            // 默认VC 设置为 customer VC
             window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "CustomerSideVCID")
         }
         

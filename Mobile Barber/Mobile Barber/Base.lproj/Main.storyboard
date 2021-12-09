@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Favorites-->
         <scene sceneID="wCG-Od-uP5">
             <objects>
                 <viewController id="YXm-WV-cpi" sceneMemberID="viewController">
@@ -19,13 +19,13 @@
                         <viewLayoutGuide key="safeArea" id="u2g-Ov-KwC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="pzV-SV-XV5"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart" catalog="system" selectedImage="heart" id="pzV-SV-XV5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="giT-ze-WlY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="-387"/>
+            <point key="canvasLocation" x="348" y="-1769"/>
         </scene>
-        <!--Item-->
+        <!--Me-->
         <scene sceneID="2kZ-Bl-qEE">
             <objects>
                 <viewController id="4d3-cn-oSh" sceneMemberID="viewController">
@@ -35,13 +35,13 @@
                         <viewLayoutGuide key="safeArea" id="cRB-12-fPa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Z5R-kI-qla"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="person" catalog="system" selectedImage="person" id="Z5R-kI-qla"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdf-6P-hKV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896" y="-387"/>
+            <point key="canvasLocation" x="348" y="-417"/>
         </scene>
-        <!--Item 1-->
+        <!--Explore-->
         <scene sceneID="IZz-DK-5iO">
             <objects>
                 <viewController id="UYp-Qg-NN9" sceneMemberID="viewController">
@@ -60,13 +60,13 @@
                         <viewLayoutGuide key="safeArea" id="ItH-0I-RSJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="gup-hU-8mF"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="gup-hU-8mF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y2N-hI-fKF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896" y="-1090"/>
+            <point key="canvasLocation" x="348" y="-2470"/>
         </scene>
-        <!--Item-->
+        <!--Appointments-->
         <scene sceneID="IWt-yr-oZR">
             <objects>
                 <viewController id="AGp-9V-5aL" sceneMemberID="viewController">
@@ -76,11 +76,11 @@
                         <viewLayoutGuide key="safeArea" id="aJA-1N-KEw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="vFE-rZ-y9w"/>
+                    <tabBarItem key="tabBarItem" title="Appointments" image="calendar" catalog="system" selectedImage="calendar" id="vFE-rZ-y9w"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgn-cI-Foe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1" y="-1089"/>
+            <point key="canvasLocation" x="348" y="-1086"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="j3X-3r-daK">
@@ -380,6 +380,10 @@
         <image name="WelcomePage1" width="655" height="430"/>
         <image name="WelcomePage2" width="992" height="1558"/>
         <image name="WelcomePage3" width="1290" height="1512"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
