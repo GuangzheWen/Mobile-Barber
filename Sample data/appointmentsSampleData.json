@@ -1,0 +1,9 @@
+[
+{
+    "id": "01",
+    "customerName": "user 1",
+    "barberName": "barber 1",
+    "cost": 9.0,
+    "serviceType": "service 1"
+  }
+]
