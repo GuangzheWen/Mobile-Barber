@@ -2,8 +2,10 @@
 {
     "id": "01",
     "customerName": "user 1",
+    "date": "2021-12-13 23:46:35 +0000"
     "barberName": "barber 1",
     "cost": 9.0,
-    "serviceType": "service 1"
+    "serviceType": "service 1",
+    "orderTimeStamp": "2021-12-12 23:46:35 +0000"
   }
 ]
