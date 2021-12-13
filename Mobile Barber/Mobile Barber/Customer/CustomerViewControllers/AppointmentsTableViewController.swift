@@ -6,13 +6,35 @@ class AppointmentsTableViewController: UITableViewController {
     
     var appointments: [Appointment] = []
 
+    let appointmentsController = AppointmentsController()
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let appointments = Appointment.loadAppointmentsFromDisk() {
-            self.appointments = appointments
-        } else {
-            self.appointments = Appointment.loadSampleAppointments()
+//        if let appointments = Appointment.loadAppointmentsFromDisk() {
+//            self.appointments = appointments
+//        } else {
+//            self.appointments = Appointment.loadSampleAppointments()
+//        }
+        appointmentsController.fetchAppointments { (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let appointments):
+                    let count = appointments.count
+                    for index in 0..<count {
+                        self.appointments.append(appointments[index])
+                        let indexPath = IndexPath(row: index, section: 0)
+                        self.tableView.insertRows(at: [indexPath], with: .automatic)
+                    }
+                    
+                case .failure(let error):
+                    print(error)
+                }
+            }
         }
+        
+        
+        
+        
         navigationItem.leftBarButtonItem = editButtonItem
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

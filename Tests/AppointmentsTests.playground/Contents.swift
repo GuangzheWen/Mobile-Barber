@@ -40,21 +40,21 @@ func fetchAppointments(completion: @escaping (Result<[Appointment], Error>) -> V
     task.resume()
 }
 
-let a =  Appointment(id: "01", date: Date().addingTimeInterval(24*60*60), customerUsername: "user 1", barberShopName: "barber 1", serviceType: "service 1", cost: 10.0, orderTimeStamp: Date())
-var b: [Appointment] = []
-b.append(a)
-b.append(a)
-
-let encoder = JSONEncoder()
-let c = try encoder.encode(b)
-
-
-print(String(data: c, encoding: .utf8)!)
+//let a =  Appointment(id: "01", date: Date().addingTimeInterval(24*60*60), customerUsername: "user 1", barberShopName: "barber 1", serviceType: "service 1", cost: 10.0, orderTimeStamp: Date())
+//var b: [Appointment] = []
+//b.append(a)
+//b.append(a)
+//
+//let encoder = JSONEncoder()
+//let c = try encoder.encode(b)
+//
+//
+//print(String(data: c, encoding: .utf8)!)
 
 fetchAppointments { (result) in
     switch result {
     case .success(let appointments):
-        print(appointments)
+        print(appointments[0])
     case .failure(let error):
         print(error)
     }
