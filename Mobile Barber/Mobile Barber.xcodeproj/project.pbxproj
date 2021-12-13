@@ -15,6 +15,10 @@
 		B046CE472765B4970081EC97 /* AppointmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046CE462765B4970081EC97 /* AppointmentsTableViewController.swift */; };
 		B046CE492765F32E0081EC97 /* AppointmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046CE482765F32E0081EC97 /* AppointmentTableViewCell.swift */; };
 		B046CE4B2765F4100081EC97 /* AppointmentDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046CE4A2765F4100081EC97 /* AppointmentDetailTableViewController.swift */; };
+		B046CE4E276724850081EC97 /* FindBarbersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046CE4D276724840081EC97 /* FindBarbersTableViewController.swift */; };
+		B046CE50276803630081EC97 /* FindBarberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046CE4F276803630081EC97 /* FindBarberDetailViewController.swift */; };
+		B046CE52276807FA0081EC97 /* FavoriteBarbersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046CE51276807FA0081EC97 /* FavoriteBarbersTableViewController.swift */; };
+		B046CE54276808FB0081EC97 /* FavoriteBarberDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046CE53276808FB0081EC97 /* FavoriteBarberDetailTableViewController.swift */; };
 		B09A7A402760757A002144E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A3F2760757A002144E6 /* AppDelegate.swift */; };
 		B09A7A422760757A002144E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A412760757A002144E6 /* SceneDelegate.swift */; };
 		B09A7A472760757A002144E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09A7A452760757A002144E6 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 		B046CE462765B4970081EC97 /* AppointmentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsTableViewController.swift; sourceTree = "<group>"; };
 		B046CE482765F32E0081EC97 /* AppointmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTableViewCell.swift; sourceTree = "<group>"; };
 		B046CE4A2765F4100081EC97 /* AppointmentDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDetailTableViewController.swift; sourceTree = "<group>"; };
+		B046CE4D276724840081EC97 /* FindBarbersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBarbersTableViewController.swift; sourceTree = "<group>"; };
+		B046CE4F276803630081EC97 /* FindBarberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBarberDetailViewController.swift; sourceTree = "<group>"; };
+		B046CE51276807FA0081EC97 /* FavoriteBarbersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBarbersTableViewController.swift; sourceTree = "<group>"; };
+		B046CE53276808FB0081EC97 /* FavoriteBarberDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBarberDetailTableViewController.swift; sourceTree = "<group>"; };
 		B09A7A3C2760757A002144E6 /* Mobile Barber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Barber.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09A7A3F2760757A002144E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B09A7A412760757A002144E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +205,10 @@
 				B046CE462765B4970081EC97 /* AppointmentsTableViewController.swift */,
 				B046CE482765F32E0081EC97 /* AppointmentTableViewCell.swift */,
 				B046CE4A2765F4100081EC97 /* AppointmentDetailTableViewController.swift */,
+				B046CE4D276724840081EC97 /* FindBarbersTableViewController.swift */,
+				B046CE4F276803630081EC97 /* FindBarberDetailViewController.swift */,
+				B046CE51276807FA0081EC97 /* FavoriteBarbersTableViewController.swift */,
+				B046CE53276808FB0081EC97 /* FavoriteBarberDetailTableViewController.swift */,
 			);
 			path = CustomerViewControllers;
 			sourceTree = "<group>";
@@ -280,15 +292,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B046CE54276808FB0081EC97 /* FavoriteBarberDetailTableViewController.swift in Sources */,
 				B046CE4B2765F4100081EC97 /* AppointmentDetailTableViewController.swift in Sources */,
 				B09A7A402760757A002144E6 /* AppDelegate.swift in Sources */,
+				B046CE50276803630081EC97 /* FindBarberDetailViewController.swift in Sources */,
 				B046CE432765B15E0081EC97 /* AppointmentsController.swift in Sources */,
 				B09A7A662761B793002144E6 /* SystemSourcePermission.swift in Sources */,
+				B046CE4E276724850081EC97 /* FindBarbersTableViewController.swift in Sources */,
 				B09A7A6127608BBE002144E6 /* WelcomePageViewController.swift in Sources */,
 				B046CE3A2765A8B10081EC97 /* Customer.swift in Sources */,
 				B09A7A63276139D3002144E6 /* IdentityChoosingViewController.swift in Sources */,
 				B046CE452765B2260081EC97 /* urlSettings.swift in Sources */,
 				B046CE412765AC870081EC97 /* Barber.swift in Sources */,
+				B046CE52276807FA0081EC97 /* FavoriteBarbersTableViewController.swift in Sources */,
 				B09A7A422760757A002144E6 /* SceneDelegate.swift in Sources */,
 				B046CE472765B4970081EC97 /* AppointmentsTableViewController.swift in Sources */,
 				B046CE3F2765AC050081EC97 /* Appointments.swift in Sources */,

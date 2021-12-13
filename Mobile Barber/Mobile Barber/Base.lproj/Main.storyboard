@@ -9,22 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Favorites-->
-        <scene sceneID="wCG-Od-uP5">
-            <objects>
-                <viewController id="YXm-WV-cpi" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Pvj-bI-GVr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="u2g-Ov-KwC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Favorites" image="heart" catalog="system" selectedImage="heart" id="pzV-SV-XV5"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="giT-ze-WlY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="348" y="-1769"/>
-        </scene>
         <!--Me-->
         <scene sceneID="2kZ-Bl-qEE">
             <objects>
@@ -40,31 +24,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdf-6P-hKV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="348" y="-417"/>
-        </scene>
-        <!--Explore-->
-        <scene sceneID="IZz-DK-5iO">
-            <objects>
-                <viewController id="UYp-Qg-NN9" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="a6W-g0-MQB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="c" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXh-CL-KDP">
-                                <rect key="frame" x="136" y="609" width="10" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ItH-0I-RSJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Explore" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="gup-hU-8mF"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y2N-hI-fKF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="348" y="-2470"/>
         </scene>
         <!--Appointments-->
         <scene sceneID="WPw-fg-a6Z">
@@ -93,7 +52,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="titleLabel" destination="RVe-to-nrT" id="c1s-cb-dSy"/>
-                                    <segue destination="f0R-tq-nxI" kind="presentation" destinationCreationSelector="segueToDetailView:sender:" id="r85-QF-bbw"/>
+                                    <segue destination="ASa-21-MTT" kind="presentation" id="r85-QF-bbw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -104,19 +63,102 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Appointments" id="BQO-a4-DBh">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="3hH-6t-Mfz"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="amX-BQ-5pZ"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9IW-7p-wRv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1310" y="-1106"/>
         </scene>
+        <!--Root View Controller-->
+        <scene sceneID="u5q-s1-JzI">
+            <objects>
+                <tableViewController id="tn9-Ob-uqu" customClass="FavoriteBarberDetailTableViewController" customModule="Mobile_Barber" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="h2Z-89-YoZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="dka-3Z-I48">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rVr-KJ-Pmo">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rVr-KJ-Pmo" id="Tsb-Bc-Ez8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQd-or-x51">
+                                                    <rect key="frame" x="112" y="11" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xEC-eD-Mgo">
+                                        <rect key="frame" x="0.0" y="88" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xEC-eD-Mgo" id="kTf-DL-ybn">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JAA-E2-iru">
+                                        <rect key="frame" x="0.0" y="131.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JAA-E2-iru" id="2tr-Z7-B0P">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="tn9-Ob-uqu" id="xux-FC-li4"/>
+                            <outlet property="delegate" destination="tn9-Ob-uqu" id="Zcy-On-iWa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="WsK-aL-G0d">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="ul0-jt-4Np">
+                            <connections>
+                                <segue destination="ADg-Z3-7Rn" kind="unwind" unwindAction="unwindToFavoriteBarberListViewWithSegue:" id="yA5-ea-1gM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="shopName" destination="EQd-or-x51" id="bn0-Rn-Su4"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s8i-DG-SHQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ADg-Z3-7Rn" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3135" y="-1769"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Bd-0B-Ehd">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" id="2mo-E5-Qzt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RxF-k8-2bf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tn9-Ob-uqu" kind="relationship" relationship="rootViewController" destinationCreationSelector="toFavoriteBarberDetailView:sender:" id="qfc-JN-AY4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTK-Gt-wfh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2245" y="-1769"/>
+        </scene>
         <!--Appointment Detail Table View Controller-->
         <scene sceneID="B7q-hk-551">
             <objects>
                 <tableViewController wantsFullScreenLayout="YES" id="f0R-tq-nxI" customClass="AppointmentDetailTableViewController" customModule="Mobile_Barber" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="AvM-NC-oL1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -163,13 +205,21 @@
                             <outlet property="delegate" destination="f0R-tq-nxI" id="xQY-RN-Peu"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="NKk-Kp-nqg">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="k5c-MT-mCC">
+                            <connections>
+                                <segue destination="6Fi-hF-jp3" kind="unwind" unwindAction="unwindFromToAppointmentsListWithSegue:" id="qen-7g-aIF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="titleLabel" destination="WK3-PW-qsX" id="4NH-Jp-MF0"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxe-i3-ety" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="6Fi-hF-jp3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2226" y="-1106"/>
+            <point key="canvasLocation" x="3134.7826086956525" y="-1106.25"/>
         </scene>
         <!--Appointments-->
         <scene sceneID="LFE-eK-Cz8">
@@ -198,8 +248,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="UYp-Qg-NN9" kind="relationship" relationship="viewControllers" id="gvd-Ga-Ub2"/>
-                        <segue destination="YXm-WV-cpi" kind="relationship" relationship="viewControllers" id="fon-AG-kEG"/>
+                        <segue destination="GK7-qn-Ypw" kind="relationship" relationship="viewControllers" id="gvd-Ga-Ub2"/>
+                        <segue destination="c7e-LS-ZGE" kind="relationship" relationship="viewControllers" id="fon-AG-kEG"/>
                         <segue destination="m2z-Le-STi" kind="relationship" relationship="viewControllers" id="NkY-ZR-Xtc"/>
                         <segue destination="4d3-cn-oSh" kind="relationship" relationship="viewControllers" id="n1j-nV-xaQ"/>
                     </connections>
@@ -546,6 +596,187 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVY-96-tz1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-888" y="620"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qoz-mq-sEq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="ASa-21-MTT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rGY-E2-BBK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f0R-tq-nxI" kind="relationship" relationship="rootViewController" destinationCreationSelector="segueToDetailView:sender:" id="M2k-Lw-agb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTN-n3-7OJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2224.6376811594205" y="-1106.25"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="gQi-V8-SsN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GK7-qn-Ypw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Explore" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="gup-hU-8mF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5ZN-hb-Akz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FV2-HG-LI4">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="I07-iI-2E8" kind="relationship" relationship="rootViewController" id="m86-48-uwd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dM3-Oc-AUk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347.82608695652175" y="-2470.3125"/>
+        </scene>
+        <!--Find Barbers Table View Controller-->
+        <scene sceneID="xLZ-Yc-4q1">
+            <objects>
+                <tableViewController id="I07-iI-2E8" customClass="FindBarbersTableViewController" customModule="Mobile_Barber" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="aS9-3K-9GT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="JUF-CZ-14G">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FindBarberCellID" id="PDp-EX-A4R">
+                                <rect key="frame" x="0.0" y="88.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PDp-EX-A4R" id="U3s-VK-ldo">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Qa6-fs-8g9" kind="presentation" id="iY5-wz-LUl"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="I07-iI-2E8" id="lX6-Dc-AkK"/>
+                            <outlet property="delegate" destination="I07-iI-2E8" id="f3A-4G-wZ3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="3L3-0R-b56"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HS6-bD-kRF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1264" y="-2470"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="pDR-ws-7vA">
+            <objects>
+                <viewController id="ois-pT-Izr" customClass="FindBarberDetailViewController" customModule="Mobile_Barber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w8J-8p-1Tu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1T-3o-aTr">
+                                <rect key="frame" x="186" y="239" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i4b-nQ-cv6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="R1E-IX-oJF">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="aaJ-Wg-Bc7">
+                            <connections>
+                                <segue destination="8T1-s2-msG" kind="unwind" unwindAction="unwindToFindBarberListViewWithSegue:" id="W1f-m4-KhP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="shopNameLabel" destination="x1T-3o-aTr" id="XHe-UP-8yD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eyh-KV-1G6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="8T1-s2-msG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3261" y="-2470"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UWB-0n-ZZY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Qa6-fs-8g9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sjB-Im-ckT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ois-pT-Izr" kind="relationship" relationship="rootViewController" destinationCreationSelector="toFindBarberDetailView:sender:" id="xNm-ut-aOO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jYX-Az-geL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2258" y="-2470"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="U18-Gc-7pA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c7e-LS-ZGE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart" catalog="system" selectedImage="heart" id="pzV-SV-XV5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iy8-SL-MPz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wE1-1X-nKS" kind="relationship" relationship="rootViewController" id="3Hn-sl-MTS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mQ2-yY-qsi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347.82608695652175" y="-1769.1964285714284"/>
+        </scene>
+        <!--Favorite Barbers Table View Controller-->
+        <scene sceneID="9mp-uz-NmI">
+            <objects>
+                <tableViewController id="wE1-1X-nKS" customClass="FavoriteBarbersTableViewController" customModule="Mobile_Barber" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="9Sg-gW-aTa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteBarberCellID" id="U0u-Hz-QdN">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U0u-Hz-QdN" id="zxS-45-eeU">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="2mo-E5-Qzt" kind="presentation" id="qn8-bg-hBy"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wE1-1X-nKS" id="yXx-kj-3in"/>
+                            <outlet property="delegate" destination="wE1-1X-nKS" id="POT-LZ-wkf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="P35-q9-bgH"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="frm-mW-Bko" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1309" y="-1769"/>
         </scene>
     </scenes>
     <resources>
