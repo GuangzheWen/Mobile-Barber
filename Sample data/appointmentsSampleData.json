@@ -1,11 +1,5 @@
+
 [
-{
-    "id": "01",
-    "customerName": "user 1",
-    "date": "2021-12-13 23:46:35 +0000"
-    "barberName": "barber 1",
-    "cost": 9.0,
-    "serviceType": "service 1",
-    "orderTimeStamp": "2021-12-12 23:46:35 +0000"
-  }
+    {"barberShopName":"barber 1","cost":10,"orderTimeStamp":661046525.67616403,"id":"01","customerUsername":"user 1","serviceType":"service 1","date":661132925.67616403},
+    {"barberShopName":"barber 1","cost":10,"orderTimeStamp":661046525.67616403,"id":"01","customerUsername":"user 1","serviceType":"service 1","date":661132925.67616403}
 ]

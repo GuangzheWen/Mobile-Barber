@@ -41,7 +41,15 @@ func fetchAppointments(completion: @escaping (Result<[Appointment], Error>) -> V
 }
 
 let a =  Appointment(id: "01", date: Date().addingTimeInterval(24*60*60), customerUsername: "user 1", barberShopName: "barber 1", serviceType: "service 1", cost: 10.0, orderTimeStamp: Date())
-print(a)
+var b: [Appointment] = []
+b.append(a)
+b.append(a)
+
+let encoder = JSONEncoder()
+let c = try encoder.encode(b)
+
+
+print(String(data: c, encoding: .utf8)!)
 
 fetchAppointments { (result) in
     switch result {
