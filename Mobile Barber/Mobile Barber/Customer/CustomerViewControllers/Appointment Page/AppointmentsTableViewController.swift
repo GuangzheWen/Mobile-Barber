@@ -49,6 +49,9 @@ class AppointmentsTableViewController: UITableViewController {
         
         // a considerable edit button which can automatically change to Done while editing
         navigationItem.leftBarButtonItem = editButtonItem
+
+        navigationItem.leftBarButtonItem?.tintColor = .black
+        
     }
 
 

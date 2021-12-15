@@ -13,12 +13,14 @@ class FindBarbersTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         if let barbers = Barber.loadBarbersFromDisk() {
             self.barbers = barbers
         } else {
             self.barbers = Barber.loadSampleBarberShop()
         }
+        navigationItem.title = "Find new Barber shops"
+        
         
     }
 
@@ -36,9 +38,9 @@ class FindBarbersTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FindBarberCellID", for: indexPath)
-
-        cell.textLabel?.text = barbers[indexPath.row].shopName
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FindBarberCellID", for: indexPath) as! FindBarberTableViewCell
+        cell.shopNameLabel.text = barbers[indexPath.row].shopName
+        
         // Configure the cell...
 
         return cell

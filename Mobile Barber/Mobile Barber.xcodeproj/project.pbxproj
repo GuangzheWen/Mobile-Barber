@@ -19,6 +19,8 @@
 		B046CE50276803630081EC97 /* FindBarberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046CE4F276803630081EC97 /* FindBarberDetailViewController.swift */; };
 		B046CE52276807FA0081EC97 /* FavoriteBarbersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046CE51276807FA0081EC97 /* FavoriteBarbersTableViewController.swift */; };
 		B046CE54276808FB0081EC97 /* FavoriteBarberDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046CE53276808FB0081EC97 /* FavoriteBarberDetailTableViewController.swift */; };
+		B046CE5627687EF90081EC97 /* FindBarberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046CE5527687EF90081EC97 /* FindBarberTableViewCell.swift */; };
+		B055D405276AA05700D83925 /* FavoriteBarberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B055D404276AA05600D83925 /* FavoriteBarberTableViewCell.swift */; };
 		B09A7A402760757A002144E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A3F2760757A002144E6 /* AppDelegate.swift */; };
 		B09A7A422760757A002144E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A412760757A002144E6 /* SceneDelegate.swift */; };
 		B09A7A472760757A002144E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09A7A452760757A002144E6 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		B046CE4F276803630081EC97 /* FindBarberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBarberDetailViewController.swift; sourceTree = "<group>"; };
 		B046CE51276807FA0081EC97 /* FavoriteBarbersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBarbersTableViewController.swift; sourceTree = "<group>"; };
 		B046CE53276808FB0081EC97 /* FavoriteBarberDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBarberDetailTableViewController.swift; sourceTree = "<group>"; };
+		B046CE5527687EF90081EC97 /* FindBarberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBarberTableViewCell.swift; sourceTree = "<group>"; };
+		B055D404276AA05600D83925 /* FavoriteBarberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBarberTableViewCell.swift; sourceTree = "<group>"; };
 		B09A7A3C2760757A002144E6 /* Mobile Barber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Barber.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09A7A3F2760757A002144E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B09A7A412760757A002144E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,36 @@
 				B046CE442765B2260081EC97 /* urlSettings.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		B055D406276AA6D100D83925 /* Appointment Page */ = {
+			isa = PBXGroup;
+			children = (
+				B046CE462765B4970081EC97 /* AppointmentsTableViewController.swift */,
+				B046CE482765F32E0081EC97 /* AppointmentTableViewCell.swift */,
+				B046CE4A2765F4100081EC97 /* AppointmentDetailTableViewController.swift */,
+			);
+			path = "Appointment Page";
+			sourceTree = "<group>";
+		};
+		B055D407276AA6E900D83925 /* Favorite Barbers Page */ = {
+			isa = PBXGroup;
+			children = (
+				B046CE51276807FA0081EC97 /* FavoriteBarbersTableViewController.swift */,
+				B055D404276AA05600D83925 /* FavoriteBarberTableViewCell.swift */,
+				B046CE53276808FB0081EC97 /* FavoriteBarberDetailTableViewController.swift */,
+			);
+			path = "Favorite Barbers Page";
+			sourceTree = "<group>";
+		};
+		B055D408276AA70300D83925 /* Find Barbers Page */ = {
+			isa = PBXGroup;
+			children = (
+				B046CE4D276724840081EC97 /* FindBarbersTableViewController.swift */,
+				B046CE5527687EF90081EC97 /* FindBarberTableViewCell.swift */,
+				B046CE4F276803630081EC97 /* FindBarberDetailViewController.swift */,
+			);
+			path = "Find Barbers Page";
 			sourceTree = "<group>";
 		};
 		B09A7A3327607579002144E6 = {
@@ -202,13 +236,9 @@
 		B09A7A5F2760775D002144E6 /* CustomerViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B046CE462765B4970081EC97 /* AppointmentsTableViewController.swift */,
-				B046CE482765F32E0081EC97 /* AppointmentTableViewCell.swift */,
-				B046CE4A2765F4100081EC97 /* AppointmentDetailTableViewController.swift */,
-				B046CE4D276724840081EC97 /* FindBarbersTableViewController.swift */,
-				B046CE4F276803630081EC97 /* FindBarberDetailViewController.swift */,
-				B046CE51276807FA0081EC97 /* FavoriteBarbersTableViewController.swift */,
-				B046CE53276808FB0081EC97 /* FavoriteBarberDetailTableViewController.swift */,
+				B055D408276AA70300D83925 /* Find Barbers Page */,
+				B055D407276AA6E900D83925 /* Favorite Barbers Page */,
+				B055D406276AA6D100D83925 /* Appointment Page */,
 			);
 			path = CustomerViewControllers;
 			sourceTree = "<group>";
@@ -295,9 +325,11 @@
 				B046CE54276808FB0081EC97 /* FavoriteBarberDetailTableViewController.swift in Sources */,
 				B046CE4B2765F4100081EC97 /* AppointmentDetailTableViewController.swift in Sources */,
 				B09A7A402760757A002144E6 /* AppDelegate.swift in Sources */,
+				B055D405276AA05700D83925 /* FavoriteBarberTableViewCell.swift in Sources */,
 				B046CE50276803630081EC97 /* FindBarberDetailViewController.swift in Sources */,
 				B046CE432765B15E0081EC97 /* AppointmentsController.swift in Sources */,
 				B09A7A662761B793002144E6 /* SystemSourcePermission.swift in Sources */,
+				B046CE5627687EF90081EC97 /* FindBarberTableViewCell.swift in Sources */,
 				B046CE4E276724850081EC97 /* FindBarbersTableViewController.swift in Sources */,
 				B09A7A6127608BBE002144E6 /* WelcomePageViewController.swift in Sources */,
 				B046CE3A2765A8B10081EC97 /* Customer.swift in Sources */,
@@ -460,9 +492,15 @@
 				DEVELOPMENT_TEAM = YYX3BCL65D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mobile Barber/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Using Camera needs this access";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Using location needs this access";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Using location needs this access";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Using location needs this access";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You can only use the photo related features by allowing access to photo library~";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -489,9 +527,15 @@
 				DEVELOPMENT_TEAM = YYX3BCL65D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mobile Barber/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Using Camera needs this access";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Using location needs this access";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Using location needs this access";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Using location needs this access";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You can only use the photo related features by allowing access to photo library~";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

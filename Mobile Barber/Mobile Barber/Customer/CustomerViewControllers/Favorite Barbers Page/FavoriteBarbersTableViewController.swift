@@ -38,9 +38,9 @@ class FavoriteBarbersTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteBarberCellID", for: indexPath)
-
-        cell.textLabel?.text = barbers[indexPath.row].shopName
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteBarberCellID", for: indexPath) as! FavoriteBarberTableViewCell
+        
+        cell.shopName.text = barbers[indexPath.row].shopName
         // Configure the cell...
 
         return cell
