@@ -17,7 +17,7 @@ class AppointmentsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // uncomment these following code to switch to practical field, this is only for testing
+        // comment these following code to switch to practical field, this is only for testing
         // these following code load data from disk and save data to disk
         if let appointments = Appointment.loadAppointmentsFromDisk() {
             self.appointments = appointments
@@ -45,7 +45,7 @@ class AppointmentsTableViewController: UITableViewController {
             }
         }
         */
-         
+        
         
         // a considerable edit button which can automatically change to Done while editing
         navigationItem.leftBarButtonItem = editButtonItem

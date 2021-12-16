@@ -35,8 +35,15 @@ class FavoriteBarbersTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteBarberCellID", for: indexPath) as! FavoriteBarberTableViewCell
         
-        cell.shopName.text = barbers[indexPath.row].shopName
         // Configure the cell...
+        let barber = barbers[indexPath.row]
+        cell.shopName.text = barber.shopName
+        cell.photoProfileImage.image = UIImage(named: barber.photoProfile) ?? UIImage(systemName: "global")
+        cell.ratePointLabel.text = "Rate: \(barber.ratePoints)"
+        cell.locationDescriptionLabel.text = "Location: " + barber.loacationDescription
+        cell.serviceForGenderLabel.text = "Service for: " + barber.serviceForGender
+        cell.firstSampleServiceLabel.text = "Top 1: " + barber.servicesTypes[0]
+        cell.secondSampleServiceLabel.text = "Top 2: " + barber.servicesTypes[1]
 
         return cell
     }

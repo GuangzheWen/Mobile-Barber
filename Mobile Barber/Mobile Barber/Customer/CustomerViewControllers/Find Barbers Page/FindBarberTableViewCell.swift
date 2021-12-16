@@ -5,6 +5,13 @@ import UIKit
 class FindBarberTableViewCell: UITableViewCell {
 
     @IBOutlet var shopNameLabel: UILabel!
+    @IBOutlet var photoProfileImage: UIImageView!
+    @IBOutlet var ratePointsLabel: UILabel!
+    @IBOutlet var locationDescriptionLabel: UILabel!
+    @IBOutlet var serviceTypeLabel: UILabel!
+    
+    @IBOutlet var fisrtSampleServiceLabel: UILabel!
+    @IBOutlet var secondSampleServiceLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

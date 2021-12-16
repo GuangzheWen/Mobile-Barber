@@ -1,13 +1,20 @@
 
 import Foundation
 
+
+
+// assistant controller to help fetch data through web service
 class AppointmentsController {
     
     func fetchAppointments(completion: @escaping (Result<[Appointment], Error>) -> Void) {
+        // uncomment following code to implement real product
 //        let urlString = baseURL + "/Appointments"
+        
+        // comment following code to use sample test
         let urlString = "https://raw.githubusercontent.com/GuangzheWen/Mobile-Barber/main/Sample%20data/appointmentsSampleData.json"
 
         var urlComponents = URLComponents(string: urlString)!
+        // uncomment following code and modify to add http request headers
 //        urlComponents.queryItems = [
 ////           example header keys
 //            "api_key": "DEMO_KEY"
@@ -15,6 +22,7 @@ class AppointmentsController {
 //            URLQueryItem(name: $0.key, value: $0.value)
 //        }
         
+        // create a network task to fetch appointments
         let task = URLSession.shared.dataTask(with: urlComponents.url!) {
             data, response, error in
             let jsonDecoder = JSONDecoder()

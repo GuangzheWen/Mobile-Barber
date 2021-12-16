@@ -5,20 +5,48 @@ class FindBarbersTableViewController: UITableViewController {
 
     var barbers: [Barber] = []
     
+    let findBarbersController = FindBarbersController()
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // comment these following code to switch to practical field, this is only for testing
+        // these following code load data from disk and save data to disk
         if let barbers = Barber.loadBarbersFromDisk() {
             self.barbers = barbers
         } else {
             self.barbers = Barber.loadSampleBarberShop()
         }
-        navigationItem.title = "Find new Barber shops"
+        updataUI()
+//        navigationItem.title = "Find new Barber shops"
         
         // used for generating sample json data
 //        let encoder = JSONEncoder()
 //        let data = try? encoder.encode(barbers)
 //        print(String(data: data!, encoding: .utf8)!)
+        
+        // uncomment these following code to fetch data from internet, which is tested successfully,
+        // but remember to check url in file AppoinmentsController.swift
+         /*
+        findBarbersController.fetchFindBarbers { (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let barbers):
+                    let count = barbers.count
+                    for index in 0..<count {
+                        self.barbers.append(barbers[index])
+                        let indexPath = IndexPath(row: index, section: 0)
+                        self.tableView.insertRows(at: [indexPath], with: .automatic)
+                    }
+                    
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
+          */
+         
         
     }
 
@@ -36,10 +64,17 @@ class FindBarbersTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FindBarberCellID", for: indexPath) as! FindBarberTableViewCell
-        cell.shopNameLabel.text = barbers[indexPath.row].shopName
-        
         // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FindBarberCellID", for: indexPath) as! FindBarberTableViewCell
+        
+        let barber = barbers[indexPath.row]
+        cell.shopNameLabel.text = barber.shopName
+        cell.photoProfileImage.image = UIImage(named: barber.photoProfile) ?? UIImage(systemName: "global")
+        cell.ratePointsLabel.text = "Rate: \(barber.ratePoints)"
+        cell.locationDescriptionLabel.text = "Location: " + barber.loacationDescription
+        cell.serviceTypeLabel.text = "Service for: " + barber.serviceForGender
+        cell.fisrtSampleServiceLabel.text = "Top 1: " + barber.servicesTypes[0]
+        cell.secondSampleServiceLabel.text = "Top 2: " + barber.servicesTypes[1]
 
         return cell
     }
@@ -66,6 +101,10 @@ class FindBarbersTableViewController: UITableViewController {
     }
     
     @IBAction func unwindToFindBarberListView(segue: UIStoryboardSegue) {
+        
+    }
+    
+    func updataUI(){
         
     }
     
