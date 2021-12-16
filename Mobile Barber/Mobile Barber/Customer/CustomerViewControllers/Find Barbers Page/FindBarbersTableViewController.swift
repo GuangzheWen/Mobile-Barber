@@ -1,9 +1,3 @@
-//
-//  FindBarbersTableViewController.swift
-//  Mobile Barber
-//
-//  Created by Wayne on 2021/12/13.
-//
 
 import UIKit
 
@@ -21,6 +15,10 @@ class FindBarbersTableViewController: UITableViewController {
         }
         navigationItem.title = "Find new Barber shops"
         
+        // used for generating sample json data
+//        let encoder = JSONEncoder()
+//        let data = try? encoder.encode(barbers)
+//        print(String(data: data!, encoding: .utf8)!)
         
     }
 

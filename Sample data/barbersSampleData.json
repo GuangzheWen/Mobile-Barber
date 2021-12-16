@@ -1,0 +1,7 @@
+[
+    {"photoProfile":"SampleProfile1","ratePoints":5,"shopName":"Corner Barber Shop","loacationDescription":"Solly Street, Sheffield, UK","servicesTypes":["Basic Haircut","Hair-washing","Perm"],"serviceForGender":"Female\/Male"}
+    ,
+    {"photoProfile":"SampleProfile2","ratePoints":5,"shopName":"Maxx Barber Shop","loacationDescription":"Temple Street, Bristol, UK","servicesTypes":["Basic Haircut","Hair-washing","Perm"],"serviceForGender":"Female"}
+    ,
+    {"photoProfile":"SampleProfile1","ratePoints":5,"shopName":"Eastern Barber Shop","loacationDescription":"Edward Street, Sheffield, UK","servicesTypes":["Hair-washing","Perm"],"serviceForGender":"Female\/Male"}
+]

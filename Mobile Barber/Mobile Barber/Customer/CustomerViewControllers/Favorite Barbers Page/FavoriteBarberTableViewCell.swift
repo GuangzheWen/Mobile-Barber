@@ -1,9 +1,4 @@
-//
-//  FavoriteBarberTableViewCell.swift
-//  Mobile Barber
-//
-//  Created by Wayne on 2021/12/16.
-//
+
 
 import UIKit
 
