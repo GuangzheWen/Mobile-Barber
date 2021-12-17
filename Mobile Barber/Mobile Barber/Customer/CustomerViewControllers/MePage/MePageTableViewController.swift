@@ -2,6 +2,7 @@
 import UIKit
 
 class MePageTableViewController: UITableViewController {
+    var customer: Customer?
 
 //    var stateOfLoginAccount = false
     override func viewDidLoad() {
@@ -12,6 +13,10 @@ class MePageTableViewController: UITableViewController {
         } else {
             // ture:
             print(UserDefaults.standard.bool(forKey: "isAccountSet"))
+            customer = Customer.loadCustomerFromDisk()
+            if let customer = customer {
+                <#body#>
+            }
         }
         
         // Uncomment the following line to preserve selection between presentations

@@ -23,7 +23,11 @@ class RegisterPageViewController: UIViewController {
     @IBAction func editChanged(_ sender: UITextField) {
         checkTextFieldIsValid()
     }
+    @IBAction func valueChanged(_ sender: UITextField) {
+        checkTextFieldIsValid()
+    }
     
+    var customer: Customer?
     /*
     // MARK: - Navigation
 
@@ -48,5 +52,28 @@ class RegisterPageViewController: UIViewController {
         
         
         
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+        
+        
+        guard segue.identifier == "registerDoneID" else { return }
+        let firstName = firstName.text ?? ""
+        let lastName = lastNameTextField.text ?? ""
+        let emailAddress = emailAddressTextField.text ?? ""
+        let age = ageTextField.text ?? ""
+        let sex = sexTextField.text ?? ""
+        let username = userNamePassword.text ?? ""
+        let password = passwordTextField.text ?? ""
+        let again = againTextField.text ?? ""
+//        if password == again{
+//
+//        }
+        customer = Customer(firstName: firstName, lastName: lastName, emailAddress: emailAddress, age: age, sex: sex, username: username, password: password)
+        
+        Customer.saveCustomerToDisk(customer: customer!)
+        
+        UserDefaults.standard.setValue(true, forKey: "isAccountSet")
     }
 }
