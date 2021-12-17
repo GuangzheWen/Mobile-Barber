@@ -13,6 +13,7 @@ struct Barber: Equatable, Comparable, Codable {
     var serviceForGender: String
     var servicesTypes: [String]
     var photoProfile: String
+    var phoneNumber: String?
     
     // comparable protocol required function
     static func < (lhs: Barber, rhs: Barber) -> Bool {

@@ -8,7 +8,7 @@ struct Customer: Equatable, Codable, Comparable {
     var lastName: String
     var emailAddress: String
     
-    var age: Int
+    var age: String
     var sex: String
     
     var username: String
@@ -25,4 +25,22 @@ struct Customer: Equatable, Codable, Comparable {
 //        case age
 //        case sex
 //    }
+    
+    static let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+    static let archiveURL = documentDirectory.appendingPathComponent("customer").appendingPathExtension("plist")
+    
+    static func loadCustomerFromDisk() -> Customer?{
+        guard let customer = try? Data(contentsOf: archiveURL)
+        else {
+            return nil
+        }
+        let propertyDecoder = PropertyListDecoder()
+        return try? propertyDecoder.decode(Customer.self, from: customer)
+    }
+    
+    static func saveCustomerToDisk(customer: Customer) {
+        let propertyEncoder = PropertyListEncoder()
+        let codedCustomer = try? propertyEncoder.encode(customer)
+        try? codedCustomer?.write(to: archiveURL, options: .noFileProtection)
+    }
 }

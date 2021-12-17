@@ -22,6 +22,9 @@
 		B046CE5627687EF90081EC97 /* FindBarberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B046CE5527687EF90081EC97 /* FindBarberTableViewCell.swift */; };
 		B055D405276AA05700D83925 /* FavoriteBarberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B055D404276AA05600D83925 /* FavoriteBarberTableViewCell.swift */; };
 		B089954C276B02AD00BCD131 /* FindBarbersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B089954B276B02AD00BCD131 /* FindBarbersController.swift */; };
+		B089CE8D276B52B30085F6CE /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B089CE8C276B52B30085F6CE /* LoginPageViewController.swift */; };
+		B089CE91276B53120085F6CE /* MePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B089CE90276B53120085F6CE /* MePageTableViewController.swift */; };
+		B089CE93276B5D0E0085F6CE /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B089CE92276B5D0E0085F6CE /* RegisterPageViewController.swift */; };
 		B09A7A402760757A002144E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A3F2760757A002144E6 /* AppDelegate.swift */; };
 		B09A7A422760757A002144E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A412760757A002144E6 /* SceneDelegate.swift */; };
 		B09A7A472760757A002144E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09A7A452760757A002144E6 /* Main.storyboard */; };
@@ -48,6 +51,9 @@
 		B046CE5527687EF90081EC97 /* FindBarberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBarberTableViewCell.swift; sourceTree = "<group>"; };
 		B055D404276AA05600D83925 /* FavoriteBarberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBarberTableViewCell.swift; sourceTree = "<group>"; };
 		B089954B276B02AD00BCD131 /* FindBarbersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBarbersController.swift; sourceTree = "<group>"; };
+		B089CE8C276B52B30085F6CE /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		B089CE90276B53120085F6CE /* MePageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MePageTableViewController.swift; sourceTree = "<group>"; };
+		B089CE92276B5D0E0085F6CE /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		B09A7A3C2760757A002144E6 /* Mobile Barber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Barber.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09A7A3F2760757A002144E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B09A7A412760757A002144E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +113,16 @@
 				B046CE4F276803630081EC97 /* FindBarberDetailViewController.swift */,
 			);
 			path = "Find Barbers Page";
+			sourceTree = "<group>";
+		};
+		B089CE8B276B528E0085F6CE /* MePage */ = {
+			isa = PBXGroup;
+			children = (
+				B089CE90276B53120085F6CE /* MePageTableViewController.swift */,
+				B089CE8C276B52B30085F6CE /* LoginPageViewController.swift */,
+				B089CE92276B5D0E0085F6CE /* RegisterPageViewController.swift */,
+			);
+			path = MePage;
 			sourceTree = "<group>";
 		};
 		B09A7A3327607579002144E6 = {
@@ -242,6 +258,7 @@
 				B055D408276AA70300D83925 /* Find Barbers Page */,
 				B055D407276AA6E900D83925 /* Favorite Barbers Page */,
 				B055D406276AA6D100D83925 /* Appointment Page */,
+				B089CE8B276B528E0085F6CE /* MePage */,
 			);
 			path = CustomerViewControllers;
 			sourceTree = "<group>";
@@ -333,10 +350,13 @@
 				B046CE432765B15E0081EC97 /* AppointmentsController.swift in Sources */,
 				B09A7A662761B793002144E6 /* SystemSourcePermission.swift in Sources */,
 				B046CE5627687EF90081EC97 /* FindBarberTableViewCell.swift in Sources */,
+				B089CE91276B53120085F6CE /* MePageTableViewController.swift in Sources */,
 				B046CE4E276724850081EC97 /* FindBarbersTableViewController.swift in Sources */,
 				B09A7A6127608BBE002144E6 /* WelcomePageViewController.swift in Sources */,
 				B046CE3A2765A8B10081EC97 /* Customer.swift in Sources */,
 				B09A7A63276139D3002144E6 /* IdentityChoosingViewController.swift in Sources */,
+				B089CE8D276B52B30085F6CE /* LoginPageViewController.swift in Sources */,
+				B089CE93276B5D0E0085F6CE /* RegisterPageViewController.swift in Sources */,
 				B046CE452765B2260081EC97 /* urlSettings.swift in Sources */,
 				B046CE412765AC870081EC97 /* Barber.swift in Sources */,
 				B046CE52276807FA0081EC97 /* FavoriteBarbersTableViewController.swift in Sources */,

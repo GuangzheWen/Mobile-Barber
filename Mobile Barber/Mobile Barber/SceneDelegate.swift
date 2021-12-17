@@ -36,6 +36,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "CustomerSideVCID")
         }
         
+//        UserDefaults.standard.setValue(false, forKey: "isAccountSet")
 
     }
 
