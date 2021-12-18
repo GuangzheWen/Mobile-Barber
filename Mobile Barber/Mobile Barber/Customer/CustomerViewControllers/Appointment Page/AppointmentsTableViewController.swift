@@ -72,7 +72,13 @@ class AppointmentsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AppointmentCellID", for: indexPath) as! AppointmentTableViewCell
 
         let appointment = appointments[indexPath.row]
-        cell.titleLabel?.text = appointment.id + appointment.serviceType
+        cell.idLabel.text = appointment.id
+        cell.timeOfPaymentLabel.text = Appointment.dateFormatter.string(from: appointment.orderTimeStamp)
+        cell.customerNameLabel.text = appointment.customerUsername
+        cell.barberShopLabel.text = appointment.barberShopName
+        cell.serviceTypeLabel.text = appointment.serviceType
+        cell.costLabel.text = "\(appointment.cost)"
+        cell.dateToServeLabel.text = Appointment.dateFormatter.string(from: appointment.date)
         // Configure the cell...
         
         return cell

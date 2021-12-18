@@ -1,10 +1,3 @@
-//
-//  LoginPageViewController.swift
-//  Mobile Barber
-//
-//  Created by Wayne on 2021/12/16.
-//
-
 import UIKit
 
 class LoginPageViewController: UIViewController {
@@ -24,6 +17,8 @@ class LoginPageViewController: UIViewController {
 //        fatalError("init(coder:) has not been implemented")
 //    }
 //
+    
+    var customer: Customer?
     override func viewDidLoad() {
         super.viewDidLoad()
 //        if let loginState = loginState,
@@ -31,9 +26,17 @@ class LoginPageViewController: UIViewController {
 //        {
 //            performSegue(withIdentifier: "toAccountPage", sender: nil)
 //        }
+        customer = Customer.loadCustomerFromDisk()
+        if let customer = customer,
+           UserDefaults.standard.bool(forKey: "isAccountSet") == true
+        {
+            usernameTextField.text = customer.username
+            passwordTextField.text = customer.password
+        }
 
         // Do any additional setup after loading the view.
         checkTextFieldValidation()
+        
         print( UserDefaults.standard.bool(forKey: "isAccountSet") )
             
         
@@ -71,6 +74,13 @@ class LoginPageViewController: UIViewController {
         buttonState = !usernameText.isEmpty && !passwordText.isEmpty
         loginButton.isEnabled = buttonState
         navigationItem.rightBarButtonItem?.isEnabled = buttonState
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard segue.identifier == "cancelButtonID" else { return }
+        UserDefaults.standard.setValue(false, forKey: "isAccountSet")
+        
     }
     /*
     // MARK: - Navigation

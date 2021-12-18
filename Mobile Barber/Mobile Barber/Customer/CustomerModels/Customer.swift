@@ -1,4 +1,3 @@
-
 import Foundation
 
 struct Customer: Equatable, Codable, Comparable {
@@ -43,4 +42,6 @@ struct Customer: Equatable, Codable, Comparable {
         let codedCustomer = try? propertyEncoder.encode(customer)
         try? codedCustomer?.write(to: archiveURL, options: .noFileProtection)
     }
+    
+
 }

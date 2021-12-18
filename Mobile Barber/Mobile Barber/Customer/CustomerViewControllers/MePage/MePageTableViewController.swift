@@ -3,22 +3,15 @@ import UIKit
 
 class MePageTableViewController: UITableViewController {
     var customer: Customer?
-
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var usernameLabel: UILabel!
+    @IBOutlet var sexLabel: UILabel!
+    
 //    var stateOfLoginAccount = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        if !UserDefaults.standard.bool(forKey: "isAccountSet") {
-            // false:
-            print(UserDefaults.standard.bool(forKey: "isAccountSet"))
-        } else {
-            // ture:
-            print(UserDefaults.standard.bool(forKey: "isAccountSet"))
-            customer = Customer.loadCustomerFromDisk()
-            if let customer = customer {
-                <#body#>
-            }
-        }
         
+        updateUI()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -30,11 +23,17 @@ class MePageTableViewController: UITableViewController {
         switch segue.identifier {
         case "LoginButtonPressed":
             UserDefaults.standard.setValue(true, forKey: "isAccountSet")
+            updateUI()
 //            print(1)
         case "DoneButtonPressed":
             UserDefaults.standard.setValue(true, forKey: "isAccountSet")
+            updateUI()
 //            print(1)
+        case "registerDoneID":
+            updateUI()
+            
         default:
+            updateUI()
             return
         }
        
@@ -46,6 +45,26 @@ class MePageTableViewController: UITableViewController {
         return LoginPageViewController(coder: coder)
     }
     
+    
+    func updateUI() {
+        if !UserDefaults.standard.bool(forKey: "isAccountSet") {
+            // false:
+            print(UserDefaults.standard.bool(forKey: "isAccountSet"))
+            nameLabel.text = "..."
+            usernameLabel.text = "..."
+            sexLabel.text = "..."
+        } else {
+            // ture:
+            print(UserDefaults.standard.bool(forKey: "isAccountSet"))
+            customer = Customer.loadCustomerFromDisk()
+            if let customer = customer {
+                nameLabel.text = customer.firstName + customer.lastName
+                usernameLabel.text = customer.username
+                sexLabel.text = customer.sex
+                
+            }
+        }
+    }
     
         // MARK: - Table view data source
 /*

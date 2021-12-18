@@ -1,5 +1,3 @@
-
-
 import UIKit
 
 class RegisterPageViewController: UIViewController {
@@ -54,9 +52,6 @@ class RegisterPageViewController: UIViewController {
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
-        
         
         guard segue.identifier == "registerDoneID" else { return }
         let firstName = firstName.text ?? ""
