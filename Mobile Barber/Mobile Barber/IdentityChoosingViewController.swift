@@ -12,8 +12,8 @@ class IdentityChoosingViewController: UIViewController {
         super.viewDidLoad()
         
         // 默认设置为关闭
-        identityIsBarberChoosingSwitch.isOn = false
-        identityIsCustomerChoosingSwitch.isOn = false
+//        identityIsBarberChoosingSwitch.isOn = false
+//        identityIsCustomerChoosingSwitch.isOn = false
         
     }
     

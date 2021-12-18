@@ -169,7 +169,6 @@
                                     <outlet property="idLabel" destination="Ncn-d4-oEi" id="Ehk-tv-xad"/>
                                     <outlet property="serviceTypeLabel" destination="9QF-4P-Thf" id="cNg-HI-cY0"/>
                                     <outlet property="timeOfPaymentLabel" destination="uUN-KA-UgN" id="eEG-9t-pUH"/>
-                                    <outlet property="titleLabel" destination="RVe-to-nrT" id="c1s-cb-dSy"/>
                                     <segue destination="ASa-21-MTT" kind="presentation" id="r85-QF-bbw"/>
                                 </connections>
                             </tableViewCell>
@@ -672,7 +671,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BB6-Rq-O4R">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BB6-Rq-O4R">
                                                 <rect key="frame" x="265.5" y="0.0" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="isCustomerSwitchChosen:" destination="myT-Uw-Wue" eventType="valueChanged" id="FWt-xV-SM2"/>
@@ -1448,6 +1447,9 @@
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" title="Tap here"/>
                                                     <buttonConfiguration key="configuration" style="filled" title="Tap here"/>
+                                                    <connections>
+                                                        <action selector="switchToBarberModeButtonPressed:" destination="sgx-zh-k9c" eventType="touchUpInside" id="k7M-YR-9ev"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>

@@ -66,6 +66,33 @@ class MePageTableViewController: UITableViewController {
         }
     }
     
+    
+    @IBAction func switchToBarberModeButtonPressed(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Are you sure to switch to barber mode?", message: nil, preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        let switchAction = UIAlertAction(title: "Switch", style: .default) { action in
+            UserDefaults.standard.setValue(false, forKey: "isCustomer")
+            UserDefaults.standard.setValue(true, forKey: "isBarber")
+            
+            exit(0)
+//            DispatchQueue.main.asyncAfter(deadline: .now()) {
+//                UIApplication.shared.perform(#selector(NSXPCConnection.suspend))
+//                         }
+            
+        }
+        alertController.addAction(cancelAction)
+        alertController.addAction(switchAction)
+        present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    
+    
+    
+    
+    
         // MARK: - Table view data source
 /*
     override func numberOfSections(in tableView: UITableView) -> Int {
