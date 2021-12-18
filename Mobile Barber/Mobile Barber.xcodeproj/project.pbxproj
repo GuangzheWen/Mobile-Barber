@@ -26,6 +26,7 @@
 		B089CE91276B53120085F6CE /* MePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B089CE90276B53120085F6CE /* MePageTableViewController.swift */; };
 		B089CE93276B5D0E0085F6CE /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B089CE92276B5D0E0085F6CE /* RegisterPageViewController.swift */; };
 		B089CE95276DA5D20085F6CE /* BarberModeMePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B089CE94276DA5D20085F6CE /* BarberModeMePageTableViewController.swift */; };
+		B089CE97276DEEB10085F6CE /* ShopInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B089CE96276DEEB10085F6CE /* ShopInfoTableViewController.swift */; };
 		B09A7A402760757A002144E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A3F2760757A002144E6 /* AppDelegate.swift */; };
 		B09A7A422760757A002144E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A412760757A002144E6 /* SceneDelegate.swift */; };
 		B09A7A472760757A002144E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09A7A452760757A002144E6 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		B089CE90276B53120085F6CE /* MePageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MePageTableViewController.swift; sourceTree = "<group>"; };
 		B089CE92276B5D0E0085F6CE /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		B089CE94276DA5D20085F6CE /* BarberModeMePageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberModeMePageTableViewController.swift; sourceTree = "<group>"; };
+		B089CE96276DEEB10085F6CE /* ShopInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopInfoTableViewController.swift; sourceTree = "<group>"; };
 		B09A7A3C2760757A002144E6 /* Mobile Barber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Barber.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09A7A3F2760757A002144E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B09A7A412760757A002144E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				B089CE94276DA5D20085F6CE /* BarberModeMePageTableViewController.swift */,
+				B089CE96276DEEB10085F6CE /* ShopInfoTableViewController.swift */,
 			);
 			path = BarberViewControllers;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				B055D405276AA05700D83925 /* FavoriteBarberTableViewCell.swift in Sources */,
 				B046CE50276803630081EC97 /* FindBarberDetailViewController.swift in Sources */,
 				B089CE95276DA5D20085F6CE /* BarberModeMePageTableViewController.swift in Sources */,
+				B089CE97276DEEB10085F6CE /* ShopInfoTableViewController.swift in Sources */,
 				B046CE432765B15E0081EC97 /* AppointmentsController.swift in Sources */,
 				B09A7A662761B793002144E6 /* SystemSourcePermission.swift in Sources */,
 				B046CE5627687EF90081EC97 /* FindBarberTableViewCell.swift in Sources */,
