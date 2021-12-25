@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B09C2A7926AAE92C009BE2C0 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09C2A7826AAE92C009BE2C0 /* Tool.swift */; };
+		B09FA7DE26A8354E00AF965E /* SecondTrialSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FA7DD26A8354E00AF965E /* SecondTrialSwiftUIApp.swift */; };
+		B09FA7E026A8354E00AF965E /* IdentitySelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FA7DF26A8354E00AF965E /* IdentitySelectView.swift */; };
+		B09FA7E226A8355000AF965E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09FA7E126A8355000AF965E /* Assets.xcassets */; };
+		B09FA7E526A8355000AF965E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09FA7E426A8355000AF965E /* Preview Assets.xcassets */; };
+		B09FA7ED26A8375900AF965E /* BarberTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FA7EC26A8375900AF965E /* BarberTabView.swift */; };
+		B09FA7EF26A8376600AF965E /* CustomerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FA7EE26A8376600AF965E /* CustomerTabView.swift */; };
+		B09FA7F326A839B800AF965E /* CustomerExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FA7F226A839B800AF965E /* CustomerExploreView.swift */; };
+		B09FA7F526A839C900AF965E /* CustomerFavaoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FA7F426A839C900AF965E /* CustomerFavaoriteView.swift */; };
+		B09FA7F726A839DE00AF965E /* CustomerOrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FA7F626A839DE00AF965E /* CustomerOrdersView.swift */; };
+		B09FA7F926A839EE00AF965E /* CustomerSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FA7F826A839EE00AF965E /* CustomerSettingView.swift */; };
+		B09FA7FB26A841D100AF965E /* BarberOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FA7FA26A841D100AF965E /* BarberOrderView.swift */; };
+		B09FA7FD26A841EB00AF965E /* BarberSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FA7FC26A841EB00AF965E /* BarberSettingView.swift */; };
+		B09FA7FF26A841FE00AF965E /* BarberManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09FA7FE26A841FE00AF965E /* BarberManageView.swift */; };
+		B0D7DDAD26A9D0C200EA8FC3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDAC26A9D0C200EA8FC3 /* LoginView.swift */; };
+		B0D7DDB326A9D62800EA8FC3 /* SingleAppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDAF26A9D62700EA8FC3 /* SingleAppointmentView.swift */; };
+		B0D7DDB426A9D62800EA8FC3 /* AppointmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDB026A9D62700EA8FC3 /* AppointmentDetailView.swift */; };
+		B0D7DDB526A9D62800EA8FC3 /* BarberDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDB126A9D62700EA8FC3 /* BarberDetailView.swift */; };
+		B0D7DDC426A9D77F00EA8FC3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDB926A9D77D00EA8FC3 /* Service.swift */; };
+		B0D7DDC526A9D77F00EA8FC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDBA26A9D77D00EA8FC3 /* User.swift */; };
+		B0D7DDC626A9D77F00EA8FC3 /* BarberShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDBB26A9D77E00EA8FC3 /* BarberShop.swift */; };
+		B0D7DDC726A9D77F00EA8FC3 /* PaymentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDBC26A9D77E00EA8FC3 /* PaymentStatus.swift */; };
+		B0D7DDC826A9D77F00EA8FC3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDBD26A9D77E00EA8FC3 /* Settings.swift */; };
+		B0D7DDC926A9D77F00EA8FC3 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDBE26A9D77E00EA8FC3 /* Order.swift */; };
+		B0D7DDCA26A9D77F00EA8FC3 /* Barber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDBF26A9D77E00EA8FC3 /* Barber.swift */; };
+		B0D7DDCB26A9D77F00EA8FC3 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDC026A9D77E00EA8FC3 /* Identity.swift */; };
+		B0D7DDCC26A9D77F00EA8FC3 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDC126A9D77E00EA8FC3 /* Customer.swift */; };
+		B0D7DDCD26A9D77F00EA8FC3 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDC226A9D77E00EA8FC3 /* Appointment.swift */; };
+		B0D7DDCE26A9D77F00EA8FC3 /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D7DDC326A9D77F00EA8FC3 /* OrderStatus.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B09C2A7826AAE92C009BE2C0 /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		B09FA7DA26A8354E00AF965E /* SecondTrialSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondTrialSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09FA7DD26A8354E00AF965E /* SecondTrialSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTrialSwiftUIApp.swift; sourceTree = "<group>"; };
+		B09FA7DF26A8354E00AF965E /* IdentitySelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentitySelectView.swift; sourceTree = "<group>"; };
+		B09FA7E126A8355000AF965E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B09FA7E426A8355000AF965E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B09FA7E626A8355000AF965E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B09FA7EC26A8375900AF965E /* BarberTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberTabView.swift; sourceTree = "<group>"; };
+		B09FA7EE26A8376600AF965E /* CustomerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTabView.swift; sourceTree = "<group>"; };
+		B09FA7F226A839B800AF965E /* CustomerExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerExploreView.swift; sourceTree = "<group>"; };
+		B09FA7F426A839C900AF965E /* CustomerFavaoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerFavaoriteView.swift; sourceTree = "<group>"; };
+		B09FA7F626A839DE00AF965E /* CustomerOrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerOrdersView.swift; sourceTree = "<group>"; };
+		B09FA7F826A839EE00AF965E /* CustomerSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerSettingView.swift; sourceTree = "<group>"; };
+		B09FA7FA26A841D100AF965E /* BarberOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberOrderView.swift; sourceTree = "<group>"; };
+		B09FA7FC26A841EB00AF965E /* BarberSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberSettingView.swift; sourceTree = "<group>"; };
+		B09FA7FE26A841FE00AF965E /* BarberManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberManageView.swift; sourceTree = "<group>"; };
+		B0D7DDAC26A9D0C200EA8FC3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B0D7DDAF26A9D62700EA8FC3 /* SingleAppointmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SingleAppointmentView.swift; path = ../../codeWithSwiftUI/codeWithSwiftUI/SingleAppointmentView.swift; sourceTree = "<group>"; };
+		B0D7DDB026A9D62700EA8FC3 /* AppointmentDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppointmentDetailView.swift; path = ../../codeWithSwiftUI/codeWithSwiftUI/AppointmentDetailView.swift; sourceTree = "<group>"; };
+		B0D7DDB126A9D62700EA8FC3 /* BarberDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarberDetailView.swift; path = ../../codeWithSwiftUI/codeWithSwiftUI/BarberDetailView.swift; sourceTree = "<group>"; };
+		B0D7DDB926A9D77D00EA8FC3 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B0D7DDBA26A9D77D00EA8FC3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B0D7DDBB26A9D77E00EA8FC3 /* BarberShop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarberShop.swift; sourceTree = "<group>"; };
+		B0D7DDBC26A9D77E00EA8FC3 /* PaymentStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentStatus.swift; sourceTree = "<group>"; };
+		B0D7DDBD26A9D77E00EA8FC3 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		B0D7DDBE26A9D77E00EA8FC3 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		B0D7DDBF26A9D77E00EA8FC3 /* Barber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barber.swift; sourceTree = "<group>"; };
+		B0D7DDC026A9D77E00EA8FC3 /* Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		B0D7DDC126A9D77E00EA8FC3 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		B0D7DDC226A9D77E00EA8FC3 /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		B0D7DDC326A9D77F00EA8FC3 /* OrderStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B09FA7D726A8354E00AF965E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B09C2A7726AAE916009BE2C0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B09C2A7826AAE92C009BE2C0 /* Tool.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B09FA7D126A8354E00AF965E = {
+			isa = PBXGroup;
+			children = (
+				B09FA7DC26A8354E00AF965E /* SecondTrialSwiftUI */,
+				B09FA7DB26A8354E00AF965E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B09FA7DB26A8354E00AF965E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B09FA7DA26A8354E00AF965E /* SecondTrialSwiftUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B09FA7DC26A8354E00AF965E /* SecondTrialSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				B09C2A7726AAE916009BE2C0 /* Tools */,
+				B0D7DDB826A9D74900EA8FC3 /* Models */,
+				B0D7DDB026A9D62700EA8FC3 /* AppointmentDetailView.swift */,
+				B0D7DDB126A9D62700EA8FC3 /* BarberDetailView.swift */,
+				B0D7DDAF26A9D62700EA8FC3 /* SingleAppointmentView.swift */,
+				B0D7DDAB26A9D0B300EA8FC3 /* AccountViews */,
+				B09FA7F126A8399000AF965E /* CustomerViews */,
+				B09FA7F026A8397D00AF965E /* BarberViews */,
+				B09FA7DD26A8354E00AF965E /* SecondTrialSwiftUIApp.swift */,
+				B09FA7DF26A8354E00AF965E /* IdentitySelectView.swift */,
+				B09FA7E126A8355000AF965E /* Assets.xcassets */,
+				B09FA7E626A8355000AF965E /* Info.plist */,
+				B09FA7E326A8355000AF965E /* Preview Content */,
+			);
+			path = SecondTrialSwiftUI;
+			sourceTree = "<group>";
+		};
+		B09FA7E326A8355000AF965E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B09FA7E426A8355000AF965E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B09FA7F026A8397D00AF965E /* BarberViews */ = {
+			isa = PBXGroup;
+			children = (
+				B09FA7EC26A8375900AF965E /* BarberTabView.swift */,
+				B09FA7FE26A841FE00AF965E /* BarberManageView.swift */,
+				B09FA7FA26A841D100AF965E /* BarberOrderView.swift */,
+				B09FA7FC26A841EB00AF965E /* BarberSettingView.swift */,
+			);
+			path = BarberViews;
+			sourceTree = "<group>";
+		};
+		B09FA7F126A8399000AF965E /* CustomerViews */ = {
+			isa = PBXGroup;
+			children = (
+				B09FA7EE26A8376600AF965E /* CustomerTabView.swift */,
+				B09FA7F226A839B800AF965E /* CustomerExploreView.swift */,
+				B09FA7F426A839C900AF965E /* CustomerFavaoriteView.swift */,
+				B09FA7F626A839DE00AF965E /* CustomerOrdersView.swift */,
+				B09FA7F826A839EE00AF965E /* CustomerSettingView.swift */,
+			);
+			path = CustomerViews;
+			sourceTree = "<group>";
+		};
+		B0D7DDAB26A9D0B300EA8FC3 /* AccountViews */ = {
+			isa = PBXGroup;
+			children = (
+				B0D7DDAC26A9D0C200EA8FC3 /* LoginView.swift */,
+			);
+			path = AccountViews;
+			sourceTree = "<group>";
+		};
+		B0D7DDB826A9D74900EA8FC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0D7DDC226A9D77E00EA8FC3 /* Appointment.swift */,
+				B0D7DDBF26A9D77E00EA8FC3 /* Barber.swift */,
+				B0D7DDBB26A9D77E00EA8FC3 /* BarberShop.swift */,
+				B0D7DDC126A9D77E00EA8FC3 /* Customer.swift */,
+				B0D7DDC026A9D77E00EA8FC3 /* Identity.swift */,
+				B0D7DDBE26A9D77E00EA8FC3 /* Order.swift */,
+				B0D7DDC326A9D77F00EA8FC3 /* OrderStatus.swift */,
+				B0D7DDBC26A9D77E00EA8FC3 /* PaymentStatus.swift */,
+				B0D7DDB926A9D77D00EA8FC3 /* Service.swift */,
+				B0D7DDBD26A9D77E00EA8FC3 /* Settings.swift */,
+				B0D7DDBA26A9D77D00EA8FC3 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B09FA7D926A8354E00AF965E /* SecondTrialSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B09FA7E926A8355000AF965E /* Build configuration list for PBXNativeTarget "SecondTrialSwiftUI" */;
+			buildPhases = (
+				B09FA7D626A8354E00AF965E /* Sources */,
+				B09FA7D726A8354E00AF965E /* Frameworks */,
+				B09FA7D826A8354E00AF965E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecondTrialSwiftUI;
+			productName = SecondTrialSwiftUI;
+			productReference = B09FA7DA26A8354E00AF965E /* SecondTrialSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B09FA7D226A8354E00AF965E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B09FA7D926A8354E00AF965E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = B09FA7D526A8354E00AF965E /* Build configuration list for PBXProject "SecondTrialSwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B09FA7D126A8354E00AF965E;
+			productRefGroup = B09FA7DB26A8354E00AF965E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B09FA7D926A8354E00AF965E /* SecondTrialSwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B09FA7D826A8354E00AF965E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09FA7E526A8355000AF965E /* Preview Assets.xcassets in Resources */,
+				B09FA7E226A8355000AF965E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B09FA7D626A8354E00AF965E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09FA7FB26A841D100AF965E /* BarberOrderView.swift in Sources */,
+				B09FA7EF26A8376600AF965E /* CustomerTabView.swift in Sources */,
+				B09FA7ED26A8375900AF965E /* BarberTabView.swift in Sources */,
+				B0D7DDC926A9D77F00EA8FC3 /* Order.swift in Sources */,
+				B0D7DDB326A9D62800EA8FC3 /* SingleAppointmentView.swift in Sources */,
+				B0D7DDCA26A9D77F00EA8FC3 /* Barber.swift in Sources */,
+				B09FA7FF26A841FE00AF965E /* BarberManageView.swift in Sources */,
+				B09FA7F926A839EE00AF965E /* CustomerSettingView.swift in Sources */,
+				B09FA7FD26A841EB00AF965E /* BarberSettingView.swift in Sources */,
+				B0D7DDC726A9D77F00EA8FC3 /* PaymentStatus.swift in Sources */,
+				B0D7DDAD26A9D0C200EA8FC3 /* LoginView.swift in Sources */,
+				B0D7DDCE26A9D77F00EA8FC3 /* OrderStatus.swift in Sources */,
+				B09FA7F526A839C900AF965E /* CustomerFavaoriteView.swift in Sources */,
+				B0D7DDCD26A9D77F00EA8FC3 /* Appointment.swift in Sources */,
+				B09FA7E026A8354E00AF965E /* IdentitySelectView.swift in Sources */,
+				B0D7DDC426A9D77F00EA8FC3 /* Service.swift in Sources */,
+				B0D7DDB426A9D62800EA8FC3 /* AppointmentDetailView.swift in Sources */,
+				B09FA7DE26A8354E00AF965E /* SecondTrialSwiftUIApp.swift in Sources */,
+				B0D7DDC526A9D77F00EA8FC3 /* User.swift in Sources */,
+				B0D7DDB526A9D62800EA8FC3 /* BarberDetailView.swift in Sources */,
+				B0D7DDCB26A9D77F00EA8FC3 /* Identity.swift in Sources */,
+				B09FA7F726A839DE00AF965E /* CustomerOrdersView.swift in Sources */,
+				B0D7DDCC26A9D77F00EA8FC3 /* Customer.swift in Sources */,
+				B0D7DDC826A9D77F00EA8FC3 /* Settings.swift in Sources */,
+				B09C2A7926AAE92C009BE2C0 /* Tool.swift in Sources */,
+				B0D7DDC626A9D77F00EA8FC3 /* BarberShop.swift in Sources */,
+				B09FA7F326A839B800AF965E /* CustomerExploreView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B09FA7E726A8355000AF965E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B09FA7E826A8355000AF965E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B09FA7EA26A8355000AF965E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SecondTrialSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = YYX3BCL65D;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SecondTrialSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wgz.SecondTrialSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B09FA7EB26A8355000AF965E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SecondTrialSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = YYX3BCL65D;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SecondTrialSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wgz.SecondTrialSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B09FA7D526A8354E00AF965E /* Build configuration list for PBXProject "SecondTrialSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09FA7E726A8355000AF965E /* Debug */,
+				B09FA7E826A8355000AF965E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B09FA7E926A8355000AF965E /* Build configuration list for PBXNativeTarget "SecondTrialSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B09FA7EA26A8355000AF965E /* Debug */,
+				B09FA7EB26A8355000AF965E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B09FA7D226A8354E00AF965E /* Project object */;
+}
