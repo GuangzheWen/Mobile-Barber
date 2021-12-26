@@ -10,10 +10,29 @@
 		6041CE6C4DF1342E6706F081 /* Pods_MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A09FA8F724756CC3A661EC2 /* Pods_MediaPlayer.framework */; };
 		B0A8354D27773309008CE2BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A8354C27773309008CE2BB /* AppDelegate.swift */; };
 		B0A8354F27773309008CE2BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A8354E27773309008CE2BB /* SceneDelegate.swift */; };
-		B0A8355127773309008CE2BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A8355027773309008CE2BB /* ViewController.swift */; };
-		B0A8355427773309008CE2BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A8355227773309008CE2BB /* Main.storyboard */; };
 		B0A8355627773309008CE2BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A8355527773309008CE2BB /* Assets.xcassets */; };
 		B0A8355927773309008CE2BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A8355727773309008CE2BB /* LaunchScreen.storyboard */; };
+		B0A8356D2777E813008CE2BB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A8356C2777E813008CE2BB /* TabBarViewController.swift */; };
+		B0A8356F2777E836008CE2BB /* FeedRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A8356E2777E836008CE2BB /* FeedRootViewController.swift */; };
+		B0A835712777E855008CE2BB /* FriendRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A835702777E855008CE2BB /* FriendRootViewController.swift */; };
+		B0A835732777E863008CE2BB /* CameraRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A835722777E863008CE2BB /* CameraRootViewController.swift */; };
+		B0A835752777E87A008CE2BB /* MessageRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A835742777E87A008CE2BB /* MessageRootViewController.swift */; };
+		B0A835772777E886008CE2BB /* ProfileRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A835762777E886008CE2BB /* ProfileRootViewController.swift */; };
+		B0A835792777F396008CE2BB /* FeedContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A835782777F396008CE2BB /* FeedContainerViewController.swift */; };
+		B0A8357B2777F709008CE2BB /* FeedContainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A8357A2777F709008CE2BB /* FeedContainerCollectionViewCell.swift */; };
+		B0A8357E2777F8C1008CE2BB /* UIViewController_MediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A8357D2777F8C1008CE2BB /* UIViewController_MediaPlayer.swift */; };
+		B0A8358027780235008CE2BB /* UIColor_Media.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A8357F27780235008CE2BB /* UIColor_Media.swift.swift */; };
+		B0C6CF62277806ED00A53A0C /* ic_home_like_before.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C6CF5E277806ED00A53A0C /* ic_home_like_before.png */; };
+		B0C6CF63277806ED00A53A0C /* icon_home_dislike_new.json in Resources */ = {isa = PBXBuildFile; fileRef = B0C6CF5F277806ED00A53A0C /* icon_home_dislike_new.json */; };
+		B0C6CF64277806ED00A53A0C /* ic_home_like_after.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C6CF60277806ED00A53A0C /* ic_home_like_after.png */; };
+		B0C6CF65277806ED00A53A0C /* icon_home_like_new.json in Resources */ = {isa = PBXBuildFile; fileRef = B0C6CF61277806ED00A53A0C /* icon_home_like_new.json */; };
+		B0C6CF682778073000A53A0C /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF672778073000A53A0C /* FeedModel.swift */; };
+		B0C6CF6C2778077800A53A0C /* FeedUserAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF6B2778077800A53A0C /* FeedUserAvatarView.swift */; };
+		B0C6CF6E2778078D00A53A0C /* FeedLikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF6D2778078D00A53A0C /* FeedLikeButton.swift */; };
+		B0C6CF70277807DF00A53A0C /* FeedTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF6F277807DF00A53A0C /* FeedTabView.swift */; };
+		B0C6CF722778080000A53A0C /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF712778080000A53A0C /* FeedTableViewCell.swift */; };
+		B0C6CF742778087F00A53A0C /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF732778087F00A53A0C /* FeedTableViewController.swift */; };
+		B0C6CF762778089600A53A0C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF752778089600A53A0C /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +40,30 @@
 		B0A8354927773309008CE2BB /* MediaPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A8354C27773309008CE2BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A8354E27773309008CE2BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B0A8355027773309008CE2BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B0A8355327773309008CE2BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0A8355527773309008CE2BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0A8355827773309008CE2BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0A8355A27773309008CE2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0A8356C2777E813008CE2BB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B0A8356E2777E836008CE2BB /* FeedRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRootViewController.swift; sourceTree = "<group>"; };
+		B0A835702777E855008CE2BB /* FriendRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRootViewController.swift; sourceTree = "<group>"; };
+		B0A835722777E863008CE2BB /* CameraRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRootViewController.swift; sourceTree = "<group>"; };
+		B0A835742777E87A008CE2BB /* MessageRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRootViewController.swift; sourceTree = "<group>"; };
+		B0A835762777E886008CE2BB /* ProfileRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRootViewController.swift; sourceTree = "<group>"; };
+		B0A835782777F396008CE2BB /* FeedContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContainerViewController.swift; sourceTree = "<group>"; };
+		B0A8357A2777F709008CE2BB /* FeedContainerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContainerCollectionViewCell.swift; sourceTree = "<group>"; };
+		B0A8357D2777F8C1008CE2BB /* UIViewController_MediaPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_MediaPlayer.swift; sourceTree = "<group>"; };
+		B0A8357F27780235008CE2BB /* UIColor_Media.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Media.swift.swift; sourceTree = "<group>"; };
+		B0C6CF5E277806ED00A53A0C /* ic_home_like_before.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_home_like_before.png; sourceTree = "<group>"; };
+		B0C6CF5F277806ED00A53A0C /* icon_home_dislike_new.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icon_home_dislike_new.json; sourceTree = "<group>"; };
+		B0C6CF60277806ED00A53A0C /* ic_home_like_after.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_home_like_after.png; sourceTree = "<group>"; };
+		B0C6CF61277806ED00A53A0C /* icon_home_like_new.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icon_home_like_new.json; sourceTree = "<group>"; };
+		B0C6CF672778073000A53A0C /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		B0C6CF6B2778077800A53A0C /* FeedUserAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUserAvatarView.swift; sourceTree = "<group>"; };
+		B0C6CF6D2778078D00A53A0C /* FeedLikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLikeButton.swift; sourceTree = "<group>"; };
+		B0C6CF6F277807DF00A53A0C /* FeedTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTabView.swift; sourceTree = "<group>"; };
+		B0C6CF712778080000A53A0C /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		B0C6CF732778087F00A53A0C /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		B0C6CF752778089600A53A0C /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		E38A27A1EAC762929CA47EBE /* Pods-MediaPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaPlayer.release.xcconfig"; path = "Target Support Files/Pods-MediaPlayer/Pods-MediaPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		FB7A011C5A7DFE2D9604DC5D /* Pods-MediaPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaPlayer.debug.xcconfig"; path = "Target Support Files/Pods-MediaPlayer/Pods-MediaPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,15 +101,178 @@
 		B0A8354B27773309008CE2BB /* MediaPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				B0C6CF5C2778067D00A53A0C /* Resources */,
+				B0A8357C2777F888008CE2BB /* Utils */,
+				B0A835652777E789008CE2BB /* Profile */,
+				B0A835642777E77F008CE2BB /* Message */,
+				B0A835632777E77A008CE2BB /* Camera */,
+				B0A835622777E763008CE2BB /* Friend */,
+				B0A835612777E75E008CE2BB /* Home */,
+				B0A835602777E743008CE2BB /* Tab */,
 				B0A8354C27773309008CE2BB /* AppDelegate.swift */,
 				B0A8354E27773309008CE2BB /* SceneDelegate.swift */,
-				B0A8355027773309008CE2BB /* ViewController.swift */,
-				B0A8355227773309008CE2BB /* Main.storyboard */,
 				B0A8355527773309008CE2BB /* Assets.xcassets */,
 				B0A8355727773309008CE2BB /* LaunchScreen.storyboard */,
 				B0A8355A27773309008CE2BB /* Info.plist */,
 			);
 			path = MediaPlayer;
+			sourceTree = "<group>";
+		};
+		B0A835602777E743008CE2BB /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				B0A835662777E7A0008CE2BB /* ViewControllers */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		B0A835612777E75E008CE2BB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B0C6CF692778074D00A53A0C /* View */,
+				B0C6CF662778072000A53A0C /* Model */,
+				B0A835672777E7AA008CE2BB /* ViewControllers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B0A835622777E763008CE2BB /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				B0A835682777E7AD008CE2BB /* ViewControllers */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		B0A835632777E77A008CE2BB /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B0A835692777E7B0008CE2BB /* ViewControllers */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		B0A835642777E77F008CE2BB /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				B0A8356A2777E7B3008CE2BB /* New Group */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		B0A835652777E789008CE2BB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B0A8356B2777E7B6008CE2BB /* ViewControllers */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B0A835662777E7A0008CE2BB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0A8356C2777E813008CE2BB /* TabBarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B0A835672777E7AA008CE2BB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0A8356E2777E836008CE2BB /* FeedRootViewController.swift */,
+				B0A835782777F396008CE2BB /* FeedContainerViewController.swift */,
+				B0C6CF732778087F00A53A0C /* FeedTableViewController.swift */,
+				B0C6CF752778089600A53A0C /* FeedViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B0A835682777E7AD008CE2BB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0A835702777E855008CE2BB /* FriendRootViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B0A835692777E7B0008CE2BB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0A835722777E863008CE2BB /* CameraRootViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B0A8356A2777E7B3008CE2BB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				B0A835742777E87A008CE2BB /* MessageRootViewController.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		B0A8356B2777E7B6008CE2BB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0A835762777E886008CE2BB /* ProfileRootViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B0A8357C2777F888008CE2BB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B0A8357D2777F8C1008CE2BB /* UIViewController_MediaPlayer.swift */,
+				B0A8357F27780235008CE2BB /* UIColor_Media.swift.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B0C6CF5C2778067D00A53A0C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0C6CF5D2778068F00A53A0C /* lottie */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B0C6CF5D2778068F00A53A0C /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				B0C6CF60277806ED00A53A0C /* ic_home_like_after.png */,
+				B0C6CF5E277806ED00A53A0C /* ic_home_like_before.png */,
+				B0C6CF5F277806ED00A53A0C /* icon_home_dislike_new.json */,
+				B0C6CF61277806ED00A53A0C /* icon_home_like_new.json */,
+			);
+			path = lottie;
+			sourceTree = "<group>";
+		};
+		B0C6CF662778072000A53A0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0C6CF672778073000A53A0C /* FeedModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B0C6CF692778074D00A53A0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0A8357A2777F709008CE2BB /* FeedContainerCollectionViewCell.swift */,
+				B0C6CF6A2778076100A53A0C /* Button */,
+				B0C6CF6F277807DF00A53A0C /* FeedTabView.swift */,
+				B0C6CF712778080000A53A0C /* FeedTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0C6CF6A2778076100A53A0C /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				B0C6CF6B2778077800A53A0C /* FeedUserAvatarView.swift */,
+				B0C6CF6D2778078D00A53A0C /* FeedLikeButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		EC3144E0904430471548E43F /* Pods */ = {
@@ -80,7 +281,6 @@
 				FB7A011C5A7DFE2D9604DC5D /* Pods-MediaPlayer.debug.xcconfig */,
 				E38A27A1EAC762929CA47EBE /* Pods-MediaPlayer.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,9 +352,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C6CF64277806ED00A53A0C /* ic_home_like_after.png in Resources */,
+				B0C6CF63277806ED00A53A0C /* icon_home_dislike_new.json in Resources */,
 				B0A8355927773309008CE2BB /* LaunchScreen.storyboard in Resources */,
 				B0A8355627773309008CE2BB /* Assets.xcassets in Resources */,
-				B0A8355427773309008CE2BB /* Main.storyboard in Resources */,
+				B0C6CF62277806ED00A53A0C /* ic_home_like_before.png in Resources */,
+				B0C6CF65277806ED00A53A0C /* icon_home_like_new.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,8 +410,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0A8355127773309008CE2BB /* ViewController.swift in Sources */,
+				B0A8357E2777F8C1008CE2BB /* UIViewController_MediaPlayer.swift in Sources */,
+				B0A835712777E855008CE2BB /* FriendRootViewController.swift in Sources */,
+				B0C6CF70277807DF00A53A0C /* FeedTabView.swift in Sources */,
+				B0C6CF722778080000A53A0C /* FeedTableViewCell.swift in Sources */,
+				B0C6CF762778089600A53A0C /* FeedViewController.swift in Sources */,
+				B0A835752777E87A008CE2BB /* MessageRootViewController.swift in Sources */,
+				B0A8358027780235008CE2BB /* UIColor_Media.swift.swift in Sources */,
 				B0A8354D27773309008CE2BB /* AppDelegate.swift in Sources */,
+				B0A8356D2777E813008CE2BB /* TabBarViewController.swift in Sources */,
+				B0C6CF6C2778077800A53A0C /* FeedUserAvatarView.swift in Sources */,
+				B0A835792777F396008CE2BB /* FeedContainerViewController.swift in Sources */,
+				B0A835732777E863008CE2BB /* CameraRootViewController.swift in Sources */,
+				B0C6CF682778073000A53A0C /* FeedModel.swift in Sources */,
+				B0A8356F2777E836008CE2BB /* FeedRootViewController.swift in Sources */,
+				B0C6CF742778087F00A53A0C /* FeedTableViewController.swift in Sources */,
+				B0C6CF6E2778078D00A53A0C /* FeedLikeButton.swift in Sources */,
+				B0A835772777E886008CE2BB /* ProfileRootViewController.swift in Sources */,
+				B0A8357B2777F709008CE2BB /* FeedContainerCollectionViewCell.swift in Sources */,
 				B0A8354F27773309008CE2BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,14 +435,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B0A8355227773309008CE2BB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B0A8355327773309008CE2BB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B0A8355727773309008CE2BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,9 +575,9 @@
 				INFOPLIST_FILE = MediaPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -393,9 +604,9 @@
 				INFOPLIST_FILE = MediaPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
