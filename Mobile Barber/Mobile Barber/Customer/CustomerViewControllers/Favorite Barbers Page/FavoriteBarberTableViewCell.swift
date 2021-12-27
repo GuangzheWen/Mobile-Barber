@@ -1,5 +1,3 @@
-
-
 import UIKit
 
 class FavoriteBarberTableViewCell: UITableViewCell {
@@ -13,11 +11,7 @@ class FavoriteBarberTableViewCell: UITableViewCell {
     
     @IBOutlet var firstSampleServiceLabel: UILabel!
     @IBOutlet var secondSampleServiceLabel: UILabel!
-    
-    
-    
-    
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -1,10 +1,10 @@
-
-
 import UIKit
 
 class FavoriteBarbersTableViewController: UITableViewController {
 
+    // used to store favorite barber list
     var barbers: [Barber] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,14 +37,8 @@ class FavoriteBarbersTableViewController: UITableViewController {
         
         // Configure the cell...
         let barber = barbers[indexPath.row]
-        cell.shopName.text = barber.shopName
-        cell.photoProfileImage.image = UIImage(named: barber.photoProfile) ?? UIImage(systemName: "global")
-        cell.ratePointLabel.text = "Rate: \(barber.ratePoints)"
-        cell.locationDescriptionLabel.text = "Location: " + barber.loacationDescription
-        cell.serviceForGenderLabel.text = "Service for: " + barber.serviceForGender
-        cell.firstSampleServiceLabel.text = "Top 1: " + barber.servicesTypes[0]
-        cell.secondSampleServiceLabel.text = "Top 2: " + barber.servicesTypes[1]
-
+        updateUI(cell, barber)
+        
         return cell
     }
 
@@ -65,7 +59,17 @@ class FavoriteBarbersTableViewController: UITableViewController {
     }
     
     @IBAction func unwindToFavoriteBarberListView(segue: UIStoryboardSegue) {
-        
+        // back from any page
+    }
+    
+    func updateUI(_ cell: FavoriteBarberTableViewCell, _ barber: Barber){
+        cell.shopName.text = barber.shopName
+        cell.photoProfileImage.image = UIImage(named: barber.photoProfile) ?? UIImage(systemName: "global")
+        cell.ratePointLabel.text = "Rate: \(barber.ratePoints)"
+        cell.locationDescriptionLabel.text = "Location: " + barber.loacationDescription
+        cell.serviceForGenderLabel.text = "Service for: " + barber.serviceForGender
+        cell.firstSampleServiceLabel.text = "Top 1: " + barber.servicesTypes[0]
+        cell.secondSampleServiceLabel.text = "Top 2: " + barber.servicesTypes[1]
     }
     /*
     // Override to support editing the table view.
