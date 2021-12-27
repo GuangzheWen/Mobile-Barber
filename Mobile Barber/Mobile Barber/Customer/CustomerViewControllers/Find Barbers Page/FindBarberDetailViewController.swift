@@ -3,11 +3,12 @@ import UIKit
 
 class FindBarberDetailViewController: UIViewController {
 
+    // detailed View Page, to display one certain barber
     var barber: Barber?
     
+    // labels and images containners
     @IBOutlet var shopNameLabel: UILabel!
     @IBOutlet var photoProfileImage: UIImageView!
-    
     @IBOutlet var servicesTableView: UITableView!
     
     
@@ -18,6 +19,8 @@ class FindBarberDetailViewController: UIViewController {
         if let barber = barber {
             shopNameLabel.text = barber.shopName
             navigationItem.title = barber.shopName
+            
+            // need to change if used in real field of product, by retrieving image data from web service
             photoProfileImage.image = UIImage(named: barber.photoProfile)
         }
         
@@ -29,10 +32,6 @@ class FindBarberDetailViewController: UIViewController {
 //        for index in 0..<servicesTableView.numberOfRows(inSection: 0) {
 //            servicesTableView.cellForRow(at: IndexPath(row: index, section: 0))?.textLabel?.text = "123"
 //        }
-        
-        
-        
-
         // Do any additional setup after loading the view.
     }
     

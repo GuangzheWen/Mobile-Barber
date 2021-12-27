@@ -1,7 +1,9 @@
 import UIKit
 
+// configuration of cell inside Find root page( tableview )
 class FindBarberTableViewCell: UITableViewCell {
 
+    // labels and image containers
     @IBOutlet var shopNameLabel: UILabel!
     @IBOutlet var photoProfileImage: UIImageView!
     @IBOutlet var ratePointsLabel: UILabel!
@@ -18,7 +20,6 @@ class FindBarberTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
 
