@@ -129,14 +129,14 @@
 			path = "Find Barbers Page";
 			sourceTree = "<group>";
 		};
-		B089CE8B276B528E0085F6CE /* MePage */ = {
+		B089CE8B276B528E0085F6CE /* Customer MePage */ = {
 			isa = PBXGroup;
 			children = (
 				B089CE90276B53120085F6CE /* MePageTableViewController.swift */,
 				B089CE8C276B52B30085F6CE /* LoginPageViewController.swift */,
 				B089CE92276B5D0E0085F6CE /* RegisterPageViewController.swift */,
 			);
-			path = MePage;
+			path = "Customer MePage";
 			sourceTree = "<group>";
 		};
 		B09A7A3327607579002144E6 = {
@@ -186,8 +186,9 @@
 		B09A7A54276075B2002144E6 /* BarberViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B089CE94276DA5D20085F6CE /* BarberModeMePageTableViewController.swift */,
-				B089CE96276DEEB10085F6CE /* ShopInfoTableViewController.swift */,
+				B0C6CF862779663A00A53A0C /* Shop Info Page */,
+				B0C6CF882779672000A53A0C /* Services Page */,
+				B0C6CF872779665400A53A0C /* Barber Mode MePage */,
 			);
 			path = BarberViewControllers;
 			sourceTree = "<group>";
@@ -256,7 +257,7 @@
 				B055D408276AA70300D83925 /* Find Barbers Page */,
 				B055D407276AA6E900D83925 /* Favorite Barbers Page */,
 				B055D406276AA6D100D83925 /* Appointment Page */,
-				B089CE8B276B528E0085F6CE /* MePage */,
+				B089CE8B276B528E0085F6CE /* Customer MePage */,
 			);
 			path = CustomerViewControllers;
 			sourceTree = "<group>";
@@ -291,6 +292,29 @@
 			children = (
 			);
 			path = BarberModelControllers;
+			sourceTree = "<group>";
+		};
+		B0C6CF862779663A00A53A0C /* Shop Info Page */ = {
+			isa = PBXGroup;
+			children = (
+				B089CE96276DEEB10085F6CE /* ShopInfoTableViewController.swift */,
+			);
+			path = "Shop Info Page";
+			sourceTree = "<group>";
+		};
+		B0C6CF872779665400A53A0C /* Barber Mode MePage */ = {
+			isa = PBXGroup;
+			children = (
+				B089CE94276DA5D20085F6CE /* BarberModeMePageTableViewController.swift */,
+			);
+			path = "Barber Mode MePage";
+			sourceTree = "<group>";
+		};
+		B0C6CF882779672000A53A0C /* Services Page */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Services Page";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
