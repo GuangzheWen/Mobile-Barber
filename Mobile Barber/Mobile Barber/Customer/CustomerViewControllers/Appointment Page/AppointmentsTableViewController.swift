@@ -1,7 +1,5 @@
 import UIKit
 
-
-
 // This class is used for the role of Controller, controlling the appointment table view
 class AppointmentsTableViewController: UITableViewController {
     

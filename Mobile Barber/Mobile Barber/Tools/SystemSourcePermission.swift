@@ -5,21 +5,23 @@ import UIKit
 import UserNotifications
 import CoreTelephony
 
-// 请求授权相册
+// reuqesting permission of photo library by alert window 请求授权相册
 func authorizingPhotoLibrary (vc: UIViewController) {
-    // 首先获取状态
+    // firstly retrieve the status of permission 首先获取状态
     let photoLibraryStatus  = PHPhotoLibrary.authorizationStatus()
     
-    // 根据不同的状态进行不同的操作
+    // handling by different status of the permission 根据不同的状态进行不同的操作
     switch photoLibraryStatus {
+    // have not chosen
     case .notDetermined:
         print("not asked for user auth")
         PHPhotoLibrary.requestAuthorization { status in
             authorizingPhotoLibrary(vc: vc)
         }
-
+    // permitted
     case .authorized:
         print("read photo library")
+    // haven't permitted thoroughly or partially
     default:
         DispatchQueue.main.async {
             let alert  = UIAlertController(title: "Photo access limited", message: "Click righ-hand side Setting button", preferredStyle: .alert)
@@ -36,6 +38,7 @@ func authorizingPhotoLibrary (vc: UIViewController) {
    
 }
 
+// ask for permission of location
 var managerOfLocation = CLLocationManager()
 
 func authorizingLocation () {
@@ -52,6 +55,7 @@ func authorizingLocation () {
     
 }
 
+// ask for permission of notification
 func authorizingNotification() {
     // 请求通知权限
     UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { // 横幅，声音，标记

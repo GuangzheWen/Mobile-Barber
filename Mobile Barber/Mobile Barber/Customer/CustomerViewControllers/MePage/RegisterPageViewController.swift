@@ -62,6 +62,7 @@ class RegisterPageViewController: UIViewController {
         let username = userNamePassword.text ?? ""
         let password = passwordTextField.text ?? ""
         let again = againTextField.text ?? ""
+        let _ = again
 //        if password == again{
 //
 //        }
