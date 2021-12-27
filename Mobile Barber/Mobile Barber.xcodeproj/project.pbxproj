@@ -41,6 +41,7 @@
 		B0C6CF852779619500A53A0C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF842779619500A53A0C /* Service.swift */; };
 		B0C6CF8A277967F600A53A0C /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF89277967F600A53A0C /* ServicesTableViewController.swift */; };
 		B0C6CF8C277977E800A53A0C /* ServiceDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF8B277977E800A53A0C /* ServiceDetailTableViewController.swift */; };
+		B0C6CF8E2779A5D000A53A0C /* ServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF8D2779A5D000A53A0C /* ServiceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		B0C6CF842779619500A53A0C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		B0C6CF89277967F600A53A0C /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
 		B0C6CF8B277977E800A53A0C /* ServiceDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailTableViewController.swift; sourceTree = "<group>"; };
+		B0C6CF8D2779A5D000A53A0C /* ServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,7 +202,7 @@
 		B09A7A59276076E8002144E6 /* Barber */ = {
 			isa = PBXGroup;
 			children = (
-				B0C6CF822779602300A53A0C /* BarberModelControllers */,
+				B0C6CF822779602300A53A0C /* Barber Model Controllers Web Service */,
 				B0C6CF812779601700A53A0C /* BarberOtherControllers */,
 				B0C6CF802779600200A53A0C /* BarberViews */,
 				B09A7A54276075B2002144E6 /* BarberViewControllers */,
@@ -214,7 +216,7 @@
 			children = (
 				B09A7A5F2760775D002144E6 /* CustomerViewControllers */,
 				B09A7A5E27607751002144E6 /* CustomerModels */,
-				B09A7A5D2760773B002144E6 /* CustomerModelControllers */,
+				B09A7A5D2760773B002144E6 /* Customer Model Controllers Web Service */,
 				B09A7A5C2760772B002144E6 /* CustomerOtherControllers */,
 				B09A7A5B2760771E002144E6 /* CustomerViews */,
 			);
@@ -237,13 +239,13 @@
 			path = CustomerOtherControllers;
 			sourceTree = "<group>";
 		};
-		B09A7A5D2760773B002144E6 /* CustomerModelControllers */ = {
+		B09A7A5D2760773B002144E6 /* Customer Model Controllers Web Service */ = {
 			isa = PBXGroup;
 			children = (
 				B046CE422765B15E0081EC97 /* AppointmentsController.swift */,
 				B089954B276B02AD00BCD131 /* FindBarbersController.swift */,
 			);
-			path = CustomerModelControllers;
+			path = "Customer Model Controllers Web Service";
 			sourceTree = "<group>";
 		};
 		B09A7A5E27607751002144E6 /* CustomerModels */ = {
@@ -291,11 +293,12 @@
 			path = BarberOtherControllers;
 			sourceTree = "<group>";
 		};
-		B0C6CF822779602300A53A0C /* BarberModelControllers */ = {
+		B0C6CF822779602300A53A0C /* Barber Model Controllers Web Service */ = {
 			isa = PBXGroup;
 			children = (
+				B0C6CF8D2779A5D000A53A0C /* ServiceController.swift */,
 			);
-			path = BarberModelControllers;
+			path = "Barber Model Controllers Web Service";
 			sourceTree = "<group>";
 		};
 		B0C6CF862779663A00A53A0C /* Shop Info Page */ = {
@@ -423,6 +426,7 @@
 				B09A7A422760757A002144E6 /* SceneDelegate.swift in Sources */,
 				B089954C276B02AD00BCD131 /* FindBarbersController.swift in Sources */,
 				B046CE472765B4970081EC97 /* AppointmentsTableViewController.swift in Sources */,
+				B0C6CF8E2779A5D000A53A0C /* ServiceController.swift in Sources */,
 				B046CE3F2765AC050081EC97 /* Appointments.swift in Sources */,
 				B046CE492765F32E0081EC97 /* AppointmentTableViewCell.swift in Sources */,
 			);

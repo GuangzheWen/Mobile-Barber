@@ -1,10 +1,3 @@
-//
-//  ServiceDetailTableViewController.swift
-//  Mobile Barber
-//
-//  Created by 温广哲 on 2021/12/27.
-//
-
 import UIKit
 
 class ServiceDetailTableViewController: UITableViewController {
