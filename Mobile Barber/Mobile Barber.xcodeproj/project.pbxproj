@@ -74,6 +74,7 @@
 		B0C6CF7727795A4600A53A0C /* LocationPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermission.swift; sourceTree = "<group>"; };
 		B0C6CF7927795B3100A53A0C /* NotificationPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermission.swift; sourceTree = "<group>"; };
 		B0C6CF7D27795E2F00A53A0C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B0C6CF7F27795E9600A53A0C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +244,7 @@
 		B09A7A5C2760772B002144E6 /* CustomerOtherControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B0C6CF7F27795E9600A53A0C /* README.md */,
 			);
 			path = CustomerOtherControllers;
 			sourceTree = "<group>";
