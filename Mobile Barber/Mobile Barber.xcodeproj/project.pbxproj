@@ -39,6 +39,7 @@
 		B0C6CF7A27795B3100A53A0C /* NotificationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF7927795B3100A53A0C /* NotificationPermission.swift */; };
 		B0C6CF7E27795E2F00A53A0C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B0C6CF7D27795E2F00A53A0C /* README.md */; };
 		B0C6CF852779619500A53A0C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF842779619500A53A0C /* Service.swift */; };
+		B0C6CF8A277967F600A53A0C /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF89277967F600A53A0C /* ServicesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		B0C6CF7F27795E9600A53A0C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B0C6CF83277960D300A53A0C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B0C6CF842779619500A53A0C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B0C6CF89277967F600A53A0C /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +315,7 @@
 		B0C6CF882779672000A53A0C /* Services Page */ = {
 			isa = PBXGroup;
 			children = (
+				B0C6CF89277967F600A53A0C /* ServicesTableViewController.swift */,
 			);
 			path = "Services Page";
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				B046CE50276803630081EC97 /* FindBarberDetailViewController.swift in Sources */,
 				B089CE95276DA5D20085F6CE /* BarberModeMePageTableViewController.swift in Sources */,
 				B089CE97276DEEB10085F6CE /* ShopInfoTableViewController.swift in Sources */,
+				B0C6CF8A277967F600A53A0C /* ServicesTableViewController.swift in Sources */,
 				B046CE432765B15E0081EC97 /* AppointmentsController.swift in Sources */,
 				B09A7A662761B793002144E6 /* LibraryPermission.swift in Sources */,
 				B046CE5627687EF90081EC97 /* FindBarberTableViewCell.swift in Sources */,
