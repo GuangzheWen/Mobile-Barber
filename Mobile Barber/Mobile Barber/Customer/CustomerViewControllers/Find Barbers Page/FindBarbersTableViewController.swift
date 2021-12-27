@@ -82,13 +82,7 @@ class FindBarbersTableViewController: UITableViewController {
         let barber = barbers[indexPath.row]
         
         // give the data to the view
-        cell.shopNameLabel.text = barber.shopName
-        cell.photoProfileImage.image = UIImage(named: barber.photoProfile) ?? UIImage(systemName: "global")
-        cell.ratePointsLabel.text = "Rate: \(barber.ratePoints)"
-        cell.locationDescriptionLabel.text = "Location: " + barber.loacationDescription
-        cell.serviceTypeLabel.text = "Service for: " + barber.serviceForGender
-        cell.fisrtSampleServiceLabel.text = "Top 1: " + barber.servicesTypes[0]
-        cell.secondSampleServiceLabel.text = "Top 2: " + barber.servicesTypes[1]
+        updataUI(cell, barber)
 
         // return the cell
         return cell
@@ -121,8 +115,15 @@ class FindBarbersTableViewController: UITableViewController {
         // return from anywhere back to this page
     }
     
-    func updataUI(){
+    func updataUI(_ cell: FindBarberTableViewCell, _ barber: Barber){
         // needed to implement, abstract the cell configuration process
+        cell.shopNameLabel.text = barber.shopName
+        cell.photoProfileImage.image = UIImage(named: barber.photoProfile) ?? UIImage(systemName: "global")
+        cell.ratePointsLabel.text = "Rate: \(barber.ratePoints)"
+        cell.locationDescriptionLabel.text = "Location: " + barber.loacationDescription
+        cell.serviceTypeLabel.text = "Service for: " + barber.serviceForGender
+        cell.fisrtSampleServiceLabel.text = "Top 1: " + barber.servicesTypes[0]
+        cell.secondSampleServiceLabel.text = "Top 2: " + barber.servicesTypes[1]
     }
     
     /*
