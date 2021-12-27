@@ -75,14 +75,7 @@ class ToDoListTableViewController: UITableViewController, ToDoTableViewCellDeleg
         let detailVC = segue.source as! ToDoDetailTableViewController
         if let toDo = detailVC.toDo {
             // toDos.firstIndex(of: toDo)
-            if let indexOfExistingToDo = tableView.indexPathForSelectedRow {
-                toDos[indexOfExistingToDo.row] = toDo
-                tableView.reloadRows(at: [indexOfExistingToDo], with: .automatic)
-            } else {
-                let newIndexPath = IndexPath(row: toDos.count, section: 0)
-                toDos.append(toDo)
-                tableView.insertRows(at: [newIndexPath], with: .automatic)
-            }
+             
             
            
         }

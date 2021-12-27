@@ -40,6 +40,7 @@
 		B0C6CF7E27795E2F00A53A0C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B0C6CF7D27795E2F00A53A0C /* README.md */; };
 		B0C6CF852779619500A53A0C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF842779619500A53A0C /* Service.swift */; };
 		B0C6CF8A277967F600A53A0C /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF89277967F600A53A0C /* ServicesTableViewController.swift */; };
+		B0C6CF8C277977E800A53A0C /* ServiceDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF8B277977E800A53A0C /* ServiceDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		B0C6CF83277960D300A53A0C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B0C6CF842779619500A53A0C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		B0C6CF89277967F600A53A0C /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
+		B0C6CF8B277977E800A53A0C /* ServiceDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				B0C6CF89277967F600A53A0C /* ServicesTableViewController.swift */,
+				B0C6CF8B277977E800A53A0C /* ServiceDetailTableViewController.swift */,
 			);
 			path = "Services Page";
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 			files = (
 				B046CE54276808FB0081EC97 /* FavoriteBarberDetailTableViewController.swift in Sources */,
 				B0C6CF852779619500A53A0C /* Service.swift in Sources */,
+				B0C6CF8C277977E800A53A0C /* ServiceDetailTableViewController.swift in Sources */,
 				B046CE4B2765F4100081EC97 /* AppointmentDetailTableViewController.swift in Sources */,
 				B09A7A402760757A002144E6 /* AppDelegate.swift in Sources */,
 				B055D405276AA05700D83925 /* FavoriteBarberTableViewCell.swift in Sources */,

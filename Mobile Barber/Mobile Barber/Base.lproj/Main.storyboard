@@ -420,6 +420,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="TM7-7p-QOm" kind="presentation" id="sk1-K4-C8Z"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -427,11 +430,129 @@
                             <outlet property="delegate" destination="KVU-Iz-C5S" id="TC7-Jr-NB3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Services" id="Wqp-e2-gWX"/>
+                    <navigationItem key="navigationItem" title="Services" id="Wqp-e2-gWX">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="Mnd-TO-RXA">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="m5p-a3-o5G">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="TM7-7p-QOm" kind="presentation" id="bAK-gW-9j5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSn-VI-zPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="855" y="972"/>
+        </scene>
+        <!--Service-->
+        <scene sceneID="bWZ-5q-W6h">
+            <objects>
+                <tableViewController id="YAT-fc-Pg7" customClass="ServiceDetailTableViewController" customModule="Mobile_Barber" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="UVV-wv-hOK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Service name" id="SH9-6g-jiS">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="3IK-ae-Tkt">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3IK-ae-Tkt" id="9VA-MS-VTS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="umz-iN-79t">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textFieldChanged2:" destination="YAT-fc-Pg7" eventType="primaryActionTriggered" id="dPk-0d-Fu9"/>
+                                                        <action selector="textFieldEditChanged:" destination="YAT-fc-Pg7" eventType="editingChanged" id="iN8-uL-FUH"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="umz-iN-79t" secondAttribute="bottom" id="BHS-cq-9c6"/>
+                                            <constraint firstItem="umz-iN-79t" firstAttribute="leading" secondItem="3IK-ae-Tkt" secondAttribute="leading" constant="20" id="QOD-no-qB8"/>
+                                            <constraint firstAttribute="trailing" secondItem="umz-iN-79t" secondAttribute="trailing" constant="20" id="UC5-2c-jpR"/>
+                                            <constraint firstItem="umz-iN-79t" firstAttribute="top" secondItem="3IK-ae-Tkt" secondAttribute="top" id="bj2-5W-QME"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Service Description" id="mTe-Y0-JnV">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Aoz-vy-fmp">
+                                        <rect key="frame" x="0.0" y="155" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Aoz-vy-fmp" id="zcc-wn-PR7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I0A-7C-Iom">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textFieldChanged2:" destination="YAT-fc-Pg7" eventType="primaryActionTriggered" id="gZM-gZ-nkx"/>
+                                                        <action selector="textFieldEditChanged:" destination="YAT-fc-Pg7" eventType="editingChanged" id="y5r-Yb-aKa"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="I0A-7C-Iom" secondAttribute="trailing" constant="20" id="96L-i8-UaL"/>
+                                            <constraint firstAttribute="bottom" secondItem="I0A-7C-Iom" secondAttribute="bottom" id="Hkb-S6-qFA"/>
+                                            <constraint firstItem="I0A-7C-Iom" firstAttribute="leading" secondItem="Aoz-vy-fmp" secondAttribute="leading" constant="20" id="IjE-cX-Fyo"/>
+                                            <constraint firstItem="I0A-7C-Iom" firstAttribute="top" secondItem="Aoz-vy-fmp" secondAttribute="top" id="dTw-aU-aci"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="YAT-fc-Pg7" id="wdx-PB-HbT"/>
+                            <outlet property="delegate" destination="YAT-fc-Pg7" id="mfV-JS-Csb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Service" id="NOn-c1-r7l">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Xbo-sF-LXG">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="hWy-eD-WhS" kind="unwind" identifier="saveServiceAndUnwind" unwindAction="unwindToServicesPageWithSegue:" id="QKc-6O-swA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="saveDoneButton" destination="Xbo-sF-LXG" id="rY3-zJ-QX6"/>
+                        <outlet property="serviceDescriptionTextField" destination="I0A-7C-Iom" id="YWb-us-d5g"/>
+                        <outlet property="serviceNameTextField" destination="umz-iN-79t" id="ecX-gB-qTD"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a1C-O3-2xv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="hWy-eD-WhS" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2546" y="972"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="23r-iq-gaK">
+            <objects>
+                <navigationController id="TM7-7p-QOm" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dOw-bj-k2x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YAT-fc-Pg7" kind="relationship" relationship="rootViewController" destinationCreationSelector="editOrNewService:sender:" id="aSW-tt-5DQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZi-1d-drV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="972"/>
         </scene>
         <!--Services-->
         <scene sceneID="hSl-D9-6pn">
@@ -2348,6 +2469,9 @@
             <point key="canvasLocation" x="790" y="294"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bAK-gW-9j5"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="WelcomePage1" width="655" height="430"/>
         <image name="WelcomePage2" width="992" height="1558"/>
