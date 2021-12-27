@@ -34,8 +34,9 @@
 		B09A7A4C2760757B002144E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09A7A4A2760757B002144E6 /* LaunchScreen.storyboard */; };
 		B09A7A6127608BBE002144E6 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A6027608BBE002144E6 /* WelcomePageViewController.swift */; };
 		B09A7A63276139D3002144E6 /* IdentityChoosingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A62276139D3002144E6 /* IdentityChoosingViewController.swift */; };
-		B09A7A662761B793002144E6 /* SystemSourcePermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A652761B793002144E6 /* SystemSourcePermission.swift */; };
+		B09A7A662761B793002144E6 /* LibraryPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A652761B793002144E6 /* LibraryPermission.swift */; };
 		B0C6CF7827795A4600A53A0C /* LocationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF7727795A4600A53A0C /* LocationPermission.swift */; };
+		B0C6CF7A27795B3100A53A0C /* NotificationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF7927795B3100A53A0C /* NotificationPermission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,8 +69,9 @@
 		B09A7A4D2760757B002144E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B09A7A6027608BBE002144E6 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
 		B09A7A62276139D3002144E6 /* IdentityChoosingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityChoosingViewController.swift; sourceTree = "<group>"; };
-		B09A7A652761B793002144E6 /* SystemSourcePermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSourcePermission.swift; sourceTree = "<group>"; };
+		B09A7A652761B793002144E6 /* LibraryPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPermission.swift; sourceTree = "<group>"; };
 		B0C6CF7727795A4600A53A0C /* LocationPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermission.swift; sourceTree = "<group>"; };
+		B0C6CF7927795B3100A53A0C /* NotificationPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,8 +276,9 @@
 		B09A7A642761B76E002144E6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				B09A7A652761B793002144E6 /* SystemSourcePermission.swift */,
+				B09A7A652761B793002144E6 /* LibraryPermission.swift */,
 				B0C6CF7727795A4600A53A0C /* LocationPermission.swift */,
+				B0C6CF7927795B3100A53A0C /* NotificationPermission.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -359,7 +362,7 @@
 				B089CE95276DA5D20085F6CE /* BarberModeMePageTableViewController.swift in Sources */,
 				B089CE97276DEEB10085F6CE /* ShopInfoTableViewController.swift in Sources */,
 				B046CE432765B15E0081EC97 /* AppointmentsController.swift in Sources */,
-				B09A7A662761B793002144E6 /* SystemSourcePermission.swift in Sources */,
+				B09A7A662761B793002144E6 /* LibraryPermission.swift in Sources */,
 				B046CE5627687EF90081EC97 /* FindBarberTableViewCell.swift in Sources */,
 				B089CE91276B53120085F6CE /* MePageTableViewController.swift in Sources */,
 				B0C6CF7827795A4600A53A0C /* LocationPermission.swift in Sources */,
@@ -371,6 +374,7 @@
 				B089CE93276B5D0E0085F6CE /* RegisterPageViewController.swift in Sources */,
 				B046CE452765B2260081EC97 /* urlSettings.swift in Sources */,
 				B046CE412765AC870081EC97 /* Barber.swift in Sources */,
+				B0C6CF7A27795B3100A53A0C /* NotificationPermission.swift in Sources */,
 				B046CE52276807FA0081EC97 /* FavoriteBarbersTableViewController.swift in Sources */,
 				B09A7A422760757A002144E6 /* SceneDelegate.swift in Sources */,
 				B089954C276B02AD00BCD131 /* FindBarbersController.swift in Sources */,

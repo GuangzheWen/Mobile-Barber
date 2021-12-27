@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 import CoreLocation
 
 // ask for permission of location
