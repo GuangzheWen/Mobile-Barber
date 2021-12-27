@@ -19,8 +19,9 @@ class FindBarbersTableViewController: UITableViewController {
         }
         // end
         
-        
+/*
         updataUI()
+*/
         
         // replaced by configuring in story board
 /*
@@ -67,16 +68,20 @@ class FindBarbersTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        // return the number of rows
         return barbers.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Configure the cell...
+        // get reusable cell with ceratin ID, this is ios mechanism to save memory
         let cell = tableView.dequeueReusableCell(withIdentifier: "FindBarberCellID", for: indexPath) as! FindBarberTableViewCell
         
+        // retrieve barber model, which is data
         let barber = barbers[indexPath.row]
+        
+        // give the data to the view
         cell.shopNameLabel.text = barber.shopName
         cell.photoProfileImage.image = UIImage(named: barber.photoProfile) ?? UIImage(systemName: "global")
         cell.ratePointsLabel.text = "Rate: \(barber.ratePoints)"
@@ -85,6 +90,7 @@ class FindBarbersTableViewController: UITableViewController {
         cell.fisrtSampleServiceLabel.text = "Top 1: " + barber.servicesTypes[0]
         cell.secondSampleServiceLabel.text = "Top 2: " + barber.servicesTypes[1]
 
+        // return the cell
         return cell
     }
     
@@ -97,24 +103,26 @@ class FindBarbersTableViewController: UITableViewController {
     }
   
     @IBSegueAction func toFindBarberDetailView(_ coder: NSCoder, sender: Any?) -> FindBarberDetailViewController? {
-        
+        // while tapping certain cell, navigate to detail view page
+        // get the cell and get the indexpath of cell
         guard  let cell = sender as? UITableViewCell,
            let indexPath = tableView.indexPath(for: cell)
         else {
             return nil
         }
         
+        // pass a barber data from cell to the new Viewcontroller
         let detailVC = FindBarberDetailViewController(coder: coder)
         detailVC?.barber = barbers[indexPath.row]
         return detailVC
     }
     
     @IBAction func unwindToFindBarberListView(segue: UIStoryboardSegue) {
-        
+        // return from anywhere back to this page
     }
     
     func updataUI(){
-        
+        // needed to implement, abstract the cell configuration process
     }
     
     /*
