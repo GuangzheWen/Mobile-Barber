@@ -188,34 +188,13 @@
 			path = BarberViewControllers;
 			sourceTree = "<group>";
 		};
-		B09A7A55276075D7002144E6 /* BarberModelControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BarberModelControllers;
-			sourceTree = "<group>";
-		};
-		B09A7A5627607668002144E6 /* BarberViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BarberViews;
-			sourceTree = "<group>";
-		};
-		B09A7A5727607674002144E6 /* BarberOtherControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BarberOtherControllers;
-			sourceTree = "<group>";
-		};
 		B09A7A59276076E8002144E6 /* Barber */ = {
 			isa = PBXGroup;
 			children = (
+				B0C6CF822779602300A53A0C /* BarberModelControllers */,
+				B0C6CF812779601700A53A0C /* BarberOtherControllers */,
+				B0C6CF802779600200A53A0C /* BarberViews */,
 				B09A7A54276075B2002144E6 /* BarberViewControllers */,
-				B09A7A5727607674002144E6 /* BarberOtherControllers */,
-				B09A7A5627607668002144E6 /* BarberViews */,
-				B09A7A55276075D7002144E6 /* BarberModelControllers */,
 				B09A7A53276075A3002144E6 /* BarberModels */,
 			);
 			path = Barber;
@@ -286,6 +265,27 @@
 				B0C6CF7927795B3100A53A0C /* NotificationPermission.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		B0C6CF802779600200A53A0C /* BarberViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BarberViews;
+			sourceTree = "<group>";
+		};
+		B0C6CF812779601700A53A0C /* BarberOtherControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BarberOtherControllers;
+			sourceTree = "<group>";
+		};
+		B0C6CF822779602300A53A0C /* BarberModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BarberModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
