@@ -1,9 +1,9 @@
 import UIKit
 import SafariServices
-// 欢迎页面 视图控制器
+// Welcome page View Controller
 class WelcomePageViewController: UIViewController {
 
-    // 分页 页面指示器，点状
+    // page indicator 分页 页面指示器，点状
     @IBOutlet var pageControl: UIPageControl!
     
     override func viewDidLoad() {
@@ -15,17 +15,17 @@ class WelcomePageViewController: UIViewController {
 }
 
 extension WelcomePageViewController: UIScrollViewDelegate {
-    // 滚动视图 开始滚动
+    // scrollview , once move do ... 滚动视图 开始滚动
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        // 计算页面位置，赋值给页面指示器
+        // count content view offset location, and configure page indicator 计算页面位置，赋值给页面指示器
         let pageIndex = round(scrollView.contentOffset.x / view.bounds.width)
         pageControl.currentPage = Int(pageIndex)
         
-        // 最后一页进入首页，缓慢
+        // at last page, swipe to get in main page slowly 最后一页进入首页，缓慢
         if scrollView.contentOffset.x > (view.bounds.width * 2 + 20) {
-            // homeVC 设置成选择页
+            // let homeVC equals to configured initial page 设置成选择页
             let homeVC = storyboard!.instantiateInitialViewController()!
-            // 显示模式 全屏幕
+            // configure display mode as full screen 显示模式 全屏幕
             homeVC.modalPresentationStyle = .fullScreen
             present(homeVC, animated: true, completion: nil)
         }

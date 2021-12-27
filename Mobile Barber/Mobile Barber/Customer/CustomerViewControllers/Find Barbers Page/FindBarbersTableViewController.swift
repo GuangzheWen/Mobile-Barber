@@ -1,4 +1,3 @@
-
 import UIKit
 
 class FindBarbersTableViewController: UITableViewController {
@@ -18,17 +17,27 @@ class FindBarbersTableViewController: UITableViewController {
         } else {
             self.barbers = Barber.loadSampleBarberShop()
         }
+        // end
+        
+        
         updataUI()
-//        navigationItem.title = "Find new Barber shops"
+        
+        // replaced by configuring in story board
+/*
+        navigationItem.title = "Find new Barber shops"
+*/
+        
         
         // used for generating sample json data
-//        let encoder = JSONEncoder()
-//        let data = try? encoder.encode(barbers)
-//        print(String(data: data!, encoding: .utf8)!)
+/*
+        let encoder = JSONEncoder()
+        let data = try? encoder.encode(barbers)
+        print(String(data: data!, encoding: .utf8)!)
+*/
         
         // uncomment these following code to fetch data from internet, which is tested successfully,
         // but remember to check url in file AppoinmentsController.swift
-         /*
+/*
         findBarbersController.fetchFindBarbers { (result) in
             DispatchQueue.main.async {
                 switch result {
@@ -45,7 +54,7 @@ class FindBarbersTableViewController: UITableViewController {
                 }
             }
         }
-          */
+*/
          
         
     }
@@ -53,7 +62,7 @@ class FindBarbersTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+        // return the number of sections
         return 1
     }
 

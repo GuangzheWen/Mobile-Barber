@@ -1,5 +1,3 @@
-
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -13,7 +11,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        // 欢迎页面 只出现一次 的方法
+        // let welcome page only shows once
         if !UserDefaults.standard.bool(forKey: "isNotFirstTimeLaunch") {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             
@@ -23,16 +21,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         
         if UserDefaults.standard.bool(forKey: "isBarber")  {
-            // 获取到Main故事版
+            // get main storyboard
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            // 让默认的VC 等于 故事版里面的barberVC
+            // let root VC equals to storyboard's barber tab VC
             window?.rootViewController = storyboard.instantiateViewController(identifier: "BarberSideVCID")
         }
         
         if UserDefaults.standard.bool(forKey: "isCustomer") {
-            // 获取Main故事版
+            // get Main storyboard
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            // 默认VC 设置为 customer VC
+            // let root VC equal to customer VC
             window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "CustomerSideVCID")
         }
         

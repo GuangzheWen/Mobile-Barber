@@ -1,47 +1,47 @@
-
 import UIKit
 
 
 class IdentityChoosingViewController: UIViewController {
 
-    // 身份选择 开则是barber 关则是customer
+    // choosing identity buttons for barber and customer
     @IBOutlet var identityIsBarberChoosingSwitch: UISwitch!
     @IBOutlet var identityIsCustomerChoosingSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 默认设置为关闭
+        // defualtly set to off
 //        identityIsBarberChoosingSwitch.isOn = false
 //        identityIsCustomerChoosingSwitch.isOn = false
         
     }
     
-//    提交按钮
+//    submit button
     @IBAction func enterButtonTapped(_ sender: UIButton) {
-        // 用于即将显示的主页
+        // used for homeVC later to show
         var homeVC: UIViewController
         if identityIsBarberChoosingSwitch.isOn {
-            // 设置key 以后进入记忆选择barber身份
+            // set static global consistent key store indentity for barber
             UserDefaults.standard.setValue(true, forKey: "isBarber")
-            // 此次进入，barber页面
+            // this time segue to barber root view
             homeVC = storyboard!.instantiateViewController(identifier: "BarberSideVCID")
         } else if identityIsCustomerChoosingSwitch.isOn {
-            // 记忆customer身份
+            // set static global consistent key store indentity for customer
             UserDefaults.standard.setValue(true, forKey: "isCustomer")
-            // 此次进入customer 页面
+            // this time, segue to customer root view
             homeVC = storyboard!.instantiateViewController(identifier: "CustomerSideVCID")
         } else {
+            // doing nothing if user didn't choose any identity
             return
         }
         
-        // 设置内容页显示模式 全屏幕
+        // configure homeVC display mode to full screen
         homeVC.modalPresentationStyle = .fullScreen
-        // 展示
+        // display it !
         present(homeVC, animated: true, completion: nil)
     }
     
-    // 拮抗两个按钮
+    // make two buttons keep always different
     @IBAction func isBarberSwitchChosen(_ sender: UISwitch) {
         identityIsCustomerChoosingSwitch.isOn = !identityIsBarberChoosingSwitch.isOn
     }
