@@ -38,6 +38,7 @@
 		B0C6CF7827795A4600A53A0C /* LocationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF7727795A4600A53A0C /* LocationPermission.swift */; };
 		B0C6CF7A27795B3100A53A0C /* NotificationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF7927795B3100A53A0C /* NotificationPermission.swift */; };
 		B0C6CF7E27795E2F00A53A0C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B0C6CF7D27795E2F00A53A0C /* README.md */; };
+		B0C6CF852779619500A53A0C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF842779619500A53A0C /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,8 @@
 		B0C6CF7927795B3100A53A0C /* NotificationPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermission.swift; sourceTree = "<group>"; };
 		B0C6CF7D27795E2F00A53A0C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B0C6CF7F27795E9600A53A0C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B0C6CF83277960D300A53A0C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B0C6CF842779619500A53A0C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				B046CE402765AC870081EC97 /* Barber.swift */,
+				B0C6CF842779619500A53A0C /* Service.swift */,
 			);
 			path = BarberModels;
 			sourceTree = "<group>";
@@ -270,6 +274,7 @@
 		B0C6CF802779600200A53A0C /* BarberViews */ = {
 			isa = PBXGroup;
 			children = (
+				B0C6CF83277960D300A53A0C /* README.md */,
 			);
 			path = BarberViews;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B046CE54276808FB0081EC97 /* FavoriteBarberDetailTableViewController.swift in Sources */,
+				B0C6CF852779619500A53A0C /* Service.swift in Sources */,
 				B046CE4B2765F4100081EC97 /* AppointmentDetailTableViewController.swift in Sources */,
 				B09A7A402760757A002144E6 /* AppDelegate.swift in Sources */,
 				B055D405276AA05700D83925 /* FavoriteBarberTableViewCell.swift in Sources */,
