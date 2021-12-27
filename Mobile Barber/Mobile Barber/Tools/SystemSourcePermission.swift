@@ -1,6 +1,6 @@
 import Foundation
 import Photos
-import CoreLocation
+
 import UIKit
 import UserNotifications
 import CoreTelephony
@@ -38,22 +38,7 @@ func authorizingPhotoLibrary (vc: UIViewController) {
    
 }
 
-// ask for permission of location
-var managerOfLocation = CLLocationManager()
 
-func authorizingLocation () {
-    print(9)
-    let loactionStatus = CLLocationManager.authorizationStatus()
-    
-    switch loactionStatus {
-    case .notDetermined:
-        managerOfLocation.requestWhenInUseAuthorization()
-    default:
-        print(12)
-    }
-
-    
-}
 
 // ask for permission of notification
 func authorizingNotification() {

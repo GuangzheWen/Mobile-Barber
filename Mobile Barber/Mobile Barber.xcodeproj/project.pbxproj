@@ -35,6 +35,7 @@
 		B09A7A6127608BBE002144E6 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A6027608BBE002144E6 /* WelcomePageViewController.swift */; };
 		B09A7A63276139D3002144E6 /* IdentityChoosingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A62276139D3002144E6 /* IdentityChoosingViewController.swift */; };
 		B09A7A662761B793002144E6 /* SystemSourcePermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A7A652761B793002144E6 /* SystemSourcePermission.swift */; };
+		B0C6CF7827795A4600A53A0C /* LocationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6CF7727795A4600A53A0C /* LocationPermission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		B09A7A6027608BBE002144E6 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
 		B09A7A62276139D3002144E6 /* IdentityChoosingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityChoosingViewController.swift; sourceTree = "<group>"; };
 		B09A7A652761B793002144E6 /* SystemSourcePermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSourcePermission.swift; sourceTree = "<group>"; };
+		B0C6CF7727795A4600A53A0C /* LocationPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				B09A7A652761B793002144E6 /* SystemSourcePermission.swift */,
+				B0C6CF7727795A4600A53A0C /* LocationPermission.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				B09A7A662761B793002144E6 /* SystemSourcePermission.swift in Sources */,
 				B046CE5627687EF90081EC97 /* FindBarberTableViewCell.swift in Sources */,
 				B089CE91276B53120085F6CE /* MePageTableViewController.swift in Sources */,
+				B0C6CF7827795A4600A53A0C /* LocationPermission.swift in Sources */,
 				B046CE4E276724850081EC97 /* FindBarbersTableViewController.swift in Sources */,
 				B09A7A6127608BBE002144E6 /* WelcomePageViewController.swift in Sources */,
 				B046CE3A2765A8B10081EC97 /* Customer.swift in Sources */,
