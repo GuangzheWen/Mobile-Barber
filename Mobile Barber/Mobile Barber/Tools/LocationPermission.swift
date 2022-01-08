@@ -6,13 +6,13 @@ import CoreLocation
 var managerOfLocation = CLLocationManager()
 
 func authorizingLocation () {
-    print(9)
+//    print(9)
     let loactionStatus = CLLocationManager.authorizationStatus()
     
     switch loactionStatus {
     case .notDetermined:
         managerOfLocation.requestWhenInUseAuthorization()
     default:
-        print(12)
+        print("cannot access permission")
     }
 }

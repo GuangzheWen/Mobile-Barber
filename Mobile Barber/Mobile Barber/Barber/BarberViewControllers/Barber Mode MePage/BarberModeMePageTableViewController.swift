@@ -28,6 +28,7 @@ class BarberModeMePageTableViewController: UITableViewController {
         }
         alertController.addAction(cancelAction)
         alertController.addAction(switchAction)
+        switchToCustomerModeNotification()
         present(alertController, animated: true, completion: nil)
     }
     

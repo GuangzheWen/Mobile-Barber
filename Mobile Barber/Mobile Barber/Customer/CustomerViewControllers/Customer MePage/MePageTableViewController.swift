@@ -84,6 +84,7 @@ class MePageTableViewController: UITableViewController {
         }
         alertController.addAction(cancelAction)
         alertController.addAction(switchAction)
+        switchToBarberModeNotification()
         present(alertController, animated: true, completion: nil)
         
     }

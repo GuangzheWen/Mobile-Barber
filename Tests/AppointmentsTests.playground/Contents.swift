@@ -9,13 +9,13 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 
 
 struct Appointment:  Codable {
-    
+
     var id: String
     var date: Date
-    
+
     var customerUsername: String
     var barberShopName: String
-    
+
     var serviceType: String
     var cost: Double
     var orderTimeStamp: Date
@@ -23,7 +23,7 @@ struct Appointment:  Codable {
 
 func fetchAppointments(completion: @escaping (Result<[Appointment], Error>) -> Void) {
     let urlComponents = URLComponents(string: urlString)!
-    
+
     let task = URLSession.shared.dataTask(with: urlComponents.url!) { data, reponse, error in
         print(1)
         let jsonDecoder = JSONDecoder()
@@ -36,7 +36,7 @@ func fetchAppointments(completion: @escaping (Result<[Appointment], Error>) -> V
             }
         }
     }
-    
+
     task.resume()
 }
 
@@ -61,3 +61,7 @@ fetchAppointments { (result) in
 
 }
 PlaygroundPage.current.finishExecution()
+//print(123)
+
+
+
