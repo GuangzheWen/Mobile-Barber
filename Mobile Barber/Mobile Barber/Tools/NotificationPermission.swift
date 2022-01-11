@@ -18,12 +18,10 @@ func switchToBarberModeNotification(){
     // 1. Notification Content
     let content = UNMutableNotificationContent()
     content.sound = UNNotificationSound.default      // to add a sound
-    content.badge = 2                                // to add a badge
+//    content.badge = 2                                // to add a badge
     content.title = "Switched mode"
     content.body = "Welcome to Barber mode!"
 
-    
- 
     // 2. Notification Trigger
     let timeIntervalTrigger =
        UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
@@ -43,7 +41,7 @@ func switchToCustomerModeNotification(){
     // 1. Notification Content
     let content = UNMutableNotificationContent()
     content.sound = UNNotificationSound.default      // to add a sound
-    content.badge = 2                                // to add a badge
+//    content.badge = 2                                // to add a badge
     content.title = "Switched mode"
     content.body = "Welcome to Customer mode!"
 
@@ -51,7 +49,7 @@ func switchToCustomerModeNotification(){
  
     // 2. Notification Trigger
     let timeIntervalTrigger =
-       UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+       UNTimeIntervalNotificationTrigger(timeInterval: 4, repeats: false)
  
     // 3. Notification Request
     let request = UNNotificationRequest(identifier: "SwitchToC",

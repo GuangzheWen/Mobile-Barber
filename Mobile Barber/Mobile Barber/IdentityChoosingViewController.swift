@@ -9,11 +9,7 @@ class IdentityChoosingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // defualtly set to off
-//        identityIsBarberChoosingSwitch.isOn = false
-//        identityIsCustomerChoosingSwitch.isOn = false
-        
+
     }
     
 //    submit button

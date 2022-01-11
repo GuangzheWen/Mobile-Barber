@@ -12,7 +12,7 @@ class BarberModeMePageTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     @IBAction func switchToCustomerMode(_ sender: UIButton) {
-        let alertController = UIAlertController(title: "Are you sure to switch to barber mode?", message: nil, preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Are you sure to switch to Customer mode?", message: nil, preferredStyle: .alert)
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
